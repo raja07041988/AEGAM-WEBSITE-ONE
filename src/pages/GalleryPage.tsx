@@ -21,7 +21,7 @@ export const GalleryPage: React.FC = () => {
 
   return (
     <div className={`min-h-screen py-12 lg:py-20 transition-colors duration-300 ${
-      isDark ? 'bg-[#1F0B0E] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#2B1015]'
+      isDark ? 'bg-[#18140B] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#1C1810]'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
@@ -29,18 +29,18 @@ export const GalleryPage: React.FC = () => {
         <div className="max-w-3xl space-y-3">
           <div className={`inline-flex items-center gap-2 px-3.5 py-1 border rounded-full text-xs font-bold uppercase tracking-wider ${
             isDark 
-              ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' 
-              : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#8C2A38]'
+              ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' 
+              : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#B8860B]'
           }`}>
             <Camera className="w-3.5 h-3.5" />
             <span>{t.gallery.eyebrow}</span>
           </div>
           <h1 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${
-            isDark ? 'text-white' : 'text-[#2B1015]'
+            isDark ? 'text-white' : 'text-[#1C1810]'
           }`}>
             {t.gallery.title}
           </h1>
-          <p className={`text-sm leading-relaxed ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>
+          <p className={`text-sm leading-relaxed ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>
             {t.gallery.subtitle}
           </p>
         </div>
@@ -56,8 +56,8 @@ export const GalleryPage: React.FC = () => {
               onClick={() => setSelectedCategory(cat)}
               className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-colors shrink-0 ${
                 selectedCategory === cat
-                  ? isDark ? 'bg-[#2E1218] text-[#D4AF37] border border-[#4D1E27]' : 'bg-[#8C2A38] text-white shadow'
-                  : isDark ? 'bg-[#150709] text-[#D1B8BC] border border-[#4D1E27]' : 'bg-[#F2EAE0] text-[#5C2B32]'
+                  ? isDark ? 'bg-[#241E0F] text-[#D4AF37] border border-[#4A3B18]' : 'bg-[#B8860B] text-white shadow'
+                  : isDark ? 'bg-[#100D06] text-[#D8CCA8] border border-[#4A3B18]' : 'bg-[#F2EAE0] text-[#61502C]'
               }`}
             >
               {cat}
@@ -76,10 +76,10 @@ export const GalleryPage: React.FC = () => {
                 key={item.id}
                 onClick={() => setActiveItem(item)}
                 className={`border rounded-xl overflow-hidden shadow-sm transition-all cursor-pointer group flex flex-col justify-between ${
-                  isDark ? 'bg-[#2E1218] border-[#4D1E27]' : 'bg-white border-[#E2D5B8]'
+                  isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-white border-[#E2D5B8]'
                 }`}
               >
-                <div className="relative h-64 overflow-hidden bg-[#150709]">
+                <div className="relative h-64 overflow-hidden bg-[#100D06]">
                   <img
                     src={item.image}
                     alt={title}
@@ -87,23 +87,23 @@ export const GalleryPage: React.FC = () => {
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <div className="p-3 bg-[#150709]/90 rounded-full text-[#D4AF37] border border-[#D4AF37]">
+                    <div className="p-3 bg-[#100D06]/90 rounded-full text-[#D4AF37] border border-[#D4AF37]">
                       <ZoomIn className="w-5 h-5" />
                     </div>
                   </div>
 
-                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-[#150709]/80 text-[#D4AF37] text-[10px] font-mono rounded backdrop-blur border border-[#4D1E27]">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-[#100D06]/80 text-[#D4AF37] text-[10px] font-mono rounded backdrop-blur border border-[#4A3B18]">
                     {item.category}
                   </div>
                 </div>
 
                 <div className="p-4">
                   <h3 className={`text-sm font-bold transition-colors ${
-                    isDark ? 'text-white group-hover:text-[#D4AF37]' : 'text-[#2B1015] group-hover:text-[#8C2A38]'
+                    isDark ? 'text-white group-hover:text-[#D4AF37]' : 'text-[#1C1810] group-hover:text-[#B8860B]'
                   }`}>
                     {title}
                   </h3>
-                  <p className={`text-xs mt-1 line-clamp-2 ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>
+                  <p className={`text-xs mt-1 line-clamp-2 ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>
                     {caption}
                   </p>
                 </div>
@@ -118,33 +118,33 @@ export const GalleryPage: React.FC = () => {
             <div 
               className={`relative w-full max-w-4xl border rounded-2xl overflow-hidden shadow-2xl animate-fadeIn ${
                 isDark 
-                  ? 'bg-[#150709] text-[#FAF3EB] border-[#4D1E27]' 
-                  : 'bg-[#FFFFFF] text-[#2B1015] border-[#E2D5B8]'
+                  ? 'bg-[#100D06] text-[#FAF3EB] border-[#4A3B18]' 
+                  : 'bg-[#FFFFFF] text-[#1C1810] border-[#E2D5B8]'
               }`}
               onClick={(e) => e.stopPropagation()}
             >
               <div className={`flex items-center justify-between px-6 py-4 border-b ${
-                isDark ? 'bg-[#2E1218] border-[#4D1E27]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
+                isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
               }`}>
                 <div>
                   <span className="text-[10px] uppercase font-mono text-[#D4AF37] tracking-wider block">
                     {activeItem.category}
                   </span>
-                  <h3 className={`text-base font-bold ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+                  <h3 className={`text-base font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                     {isTa && activeItem.taTitle ? activeItem.taTitle : activeItem.title}
                   </h3>
                 </div>
                 <button
                   onClick={() => setActiveItem(null)}
                   className={`p-1.5 rounded-lg transition-colors ${
-                    isDark ? 'text-[#D1B8BC] hover:text-white hover:bg-[#36151C]' : 'text-[#5C2B32] hover:text-black'
+                    isDark ? 'text-[#D8CCA8] hover:text-white hover:bg-[#362A10]' : 'text-[#61502C] hover:text-black'
                   }`}
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
 
-              <div className={`p-4 sm:p-6 ${isDark ? 'bg-[#150709]' : 'bg-[#FAF7F2]'}`}>
+              <div className={`p-4 sm:p-6 ${isDark ? 'bg-[#100D06]' : 'bg-[#FAF7F2]'}`}>
                 <img
                   src={activeItem.image}
                   alt={activeItem.title}
@@ -152,20 +152,20 @@ export const GalleryPage: React.FC = () => {
                   referrerPolicy="no-referrer"
                 />
                 <p className={`text-xs sm:text-sm mt-4 text-center max-w-2xl mx-auto leading-relaxed ${
-                  isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+                  isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
                 }`}>
                   {isTa && activeItem.taCaption ? activeItem.taCaption : activeItem.caption}
                 </p>
               </div>
 
               <div className={`px-6 py-3 border-t flex items-center justify-between text-xs ${
-                isDark ? 'bg-[#2E1218] border-[#4D1E27] text-[#D1B8BC]' : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#5C2B32]'
+                isDark ? 'bg-[#241E0F] border-[#4A3B18] text-[#D8CCA8]' : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#61502C]'
               }`}>
                 <span>AEGAM Industrial Operations</span>
                 <button
                   onClick={() => setActiveItem(null)}
                   className={`px-4 py-1.5 font-bold text-xs rounded transition-colors ${
-                    isDark ? 'bg-[#C5A059] text-[#1F0B0E] hover:bg-[#D4AF37]' : 'bg-[#8C2A38] text-white hover:bg-[#72202C]'
+                    isDark ? 'bg-[#C5A059] text-[#18140B] hover:bg-[#D4AF37]' : 'bg-[#B8860B] text-white hover:bg-[#A37409]'
                   }`}
                 >
                   {t.gallery.closeViewer}

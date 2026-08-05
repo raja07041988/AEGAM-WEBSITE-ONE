@@ -49,7 +49,7 @@ export const EcosystemDiagram: React.FC = () => {
 
   return (
     <div className={`py-12 border-t border-b transition-colors duration-300 ${
-      isDark ? 'bg-[#150709] border-[#4D1E27]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
+      isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
@@ -59,12 +59,12 @@ export const EcosystemDiagram: React.FC = () => {
             {t.ecosystemDiagram.eyebrow}
           </span>
           <h2 className={`text-2xl sm:text-3xl font-extrabold tracking-tight ${
-            isDark ? 'text-white' : 'text-[#2B1015]'
+            isDark ? 'text-white' : 'text-[#1C1810]'
           }`}>
             {t.ecosystemDiagram.title}
           </h2>
           <p className={`text-xs sm:text-sm leading-relaxed ${
-            isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+            isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
           }`}>
             {t.ecosystemDiagram.subtitle}
           </p>
@@ -76,8 +76,8 @@ export const EcosystemDiagram: React.FC = () => {
           {/* Connecting line background (Desktop) */}
           <div className={`hidden lg:block absolute top-1/2 left-[10%] right-[10%] h-0.5 -translate-y-1/2 z-0 ${
             isDark 
-              ? 'bg-gradient-to-r from-[#D4AF37] via-[#4D1E27] to-[#D4AF37]' 
-              : 'bg-gradient-to-r from-[#8C2A38] via-[#E2D5B8] to-[#8C2A38]'
+              ? 'bg-gradient-to-r from-[#D4AF37] via-[#4A3B18] to-[#D4AF37]' 
+              : 'bg-gradient-to-r from-[#B8860B] via-[#E2D5B8] to-[#B8860B]'
           }`}></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10">
@@ -87,8 +87,8 @@ export const EcosystemDiagram: React.FC = () => {
                 <div key={node.id} className="flex flex-col items-center">
                   <div className={`w-full p-5 rounded-xl border shadow-sm transition-all hover:shadow-md flex flex-col justify-between h-full space-y-4 ${
                     isDark 
-                      ? 'bg-[#2E1218] border-[#4D1E27] text-[#FAF3EB]' 
-                      : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#2B1015]'
+                      ? 'bg-[#241E0F] border-[#4A3B18] text-[#FAF3EB]' 
+                      : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#1C1810]'
                   }`}>
                     
                     <div className="flex items-center justify-between">
@@ -96,7 +96,7 @@ export const EcosystemDiagram: React.FC = () => {
                         <IconComp className="w-5 h-5" />
                       </div>
                       <span className={`text-[9px] font-mono uppercase font-bold px-2 py-0.5 rounded border ${
-                        isDark ? 'bg-[#150709] text-[#D4AF37] border-[#4D1E27]' : 'bg-[#F2EAE0] text-[#8C2A38] border-[#E2D5B8]'
+                        isDark ? 'bg-[#100D06] text-[#D4AF37] border-[#4A3B18]' : 'bg-[#F2EAE0] text-[#B8860B] border-[#E2D5B8]'
                       }`}>
                         {node.badge}
                       </span>
@@ -104,11 +104,11 @@ export const EcosystemDiagram: React.FC = () => {
 
                     <div>
                       <h3 className="text-sm font-bold tracking-tight mb-1">{node.title}</h3>
-                      <p className={`text-xs leading-relaxed ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>{node.desc}</p>
+                      <p className={`text-xs leading-relaxed ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>{node.desc}</p>
                     </div>
 
                     <div className={`pt-2 border-t flex items-center justify-between text-[10px] font-mono ${
-                      isDark ? 'border-[#4D1E27] text-[#D4AF37]' : 'border-[#F2EAE0] text-[#8C2A38]'
+                      isDark ? 'border-[#4A3B18] text-[#D4AF37]' : 'border-[#F2EAE0] text-[#B8860B]'
                     }`}>
                       <span>Node 0{index + 1}</span>
                       <span>Verified</span>

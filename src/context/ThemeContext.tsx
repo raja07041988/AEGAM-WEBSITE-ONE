@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-export type ThemeMode = 'cherry-dark' | 'cream-light';
+export type ThemeMode = 'gold-dark' | 'cream-light';
 
 interface ThemeContextType {
   theme: ThemeMode;
@@ -14,7 +14,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setThemeState] = useState<ThemeMode>(() => {
     const saved = localStorage.getItem('aegam_theme');
-    return (saved === 'cherry-dark' || saved === 'cream-light') ? saved : 'cherry-dark';
+    return (saved === 'gold-dark' || saved === 'cream-light') ? saved : 'gold-dark';
   });
 
   const setTheme = (mode: ThemeMode) => {
@@ -23,10 +23,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const toggleTheme = () => {
-    setTheme(theme === 'cherry-dark' ? 'cream-light' : 'cherry-dark');
+    setTheme(theme === 'gold-dark' ? 'cream-light' : 'gold-dark');
   };
 
-  const isDark = theme === 'cherry-dark';
+  const isDark = theme === 'gold-dark';
 
   useEffect(() => {
     if (isDark) {

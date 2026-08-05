@@ -9,7 +9,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taCategory: 'இயந்திரங்கள்',
     image: '/src/assets/images/aegam_rotary_oil_machine_1785940118220.jpg',
     caption: 'Heavy rotary oil machine undergoing continuous load trial at Aegan Anegan workshop bay.',
-    taCaption: 'ஏகன் அனேகன் பட்டறையில் தொடர்ச்சியான சுமை சோதனையில் இருக்கும் கனரக ரோட்டரி எண்ணெய் இயந்திரம்.'
+    taCaption: 'ஏகன் அநேகன் பட்டறையில் தொடர்ச்சியான சுமை சோதனையில் இருக்கும் கனரக ரோட்டரி எண்ணெய் இயந்திரம்.'
   },
   {
     id: 'heavy-lathe-machining',

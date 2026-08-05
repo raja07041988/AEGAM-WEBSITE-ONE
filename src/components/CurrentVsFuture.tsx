@@ -25,7 +25,7 @@ export const CurrentVsFuture: React.FC = () => {
     },
     { 
       title: isTa ? 'வணிகம் & விநியோகம்' : 'Commerce & Distribution', 
-      desc: isTa ? 'வளரிவன் இண்டஸ்ட்ரி வாடிக்கையாளர் சேர்க்கை, டீலர்ஷிப் அமைப்புகள் மற்றும் விநியோகம்.' : 'Valarivan Industry client onboarding, dealership structures, and regional distribution.' 
+      desc: isTa ? 'வாலறிவன் இண்டஸ்ட்ரி வாடிக்கையாளர் சேர்க்கை, டீலர்ஷிப் அமைப்புகள் மற்றும் விநியோகம்.' : 'Valarivan Industry client onboarding, dealership structures, and regional distribution.' 
     },
     { 
       title: isTa ? 'மூலோபாய கொள்முதல்' : 'Strategic Procurement', 
@@ -66,7 +66,7 @@ export const CurrentVsFuture: React.FC = () => {
 
   return (
     <section className={`py-20 transition-colors duration-300 ${
-      isDark ? 'bg-[#1F0B0E] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#2B1015]'
+      isDark ? 'bg-[#18140B] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#1C1810]'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -74,19 +74,19 @@ export const CurrentVsFuture: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className={`inline-flex items-center gap-2 px-3.5 py-1 border rounded-full text-xs font-bold uppercase tracking-wider ${
             isDark 
-              ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' 
-              : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#8C2A38]'
+              ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' 
+              : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#B8860B]'
           }`}>
             <Compass className="w-3.5 h-3.5" />
             <span>{t.currentVsFuture.eyebrow}</span>
           </div>
           <h2 className={`text-2xl sm:text-3xl font-extrabold tracking-tight ${
-            isDark ? 'text-white' : 'text-[#2B1015]'
+            isDark ? 'text-white' : 'text-[#1C1810]'
           }`}>
             {t.currentVsFuture.title}
           </h2>
           <p className={`text-sm leading-relaxed ${
-            isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+            isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
           }`}>
             {t.currentVsFuture.subtitle}
           </p>
@@ -95,18 +95,18 @@ export const CurrentVsFuture: React.FC = () => {
         {/* Tab Toggle */}
         <div className="mt-10 flex justify-center">
           <div className={`p-1 rounded-xl flex items-center gap-1 shadow-inner max-w-md w-full border ${
-            isDark ? 'bg-[#150709] border-[#4D1E27]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
+            isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
           }`}>
             <button
               onClick={() => setActiveTab('current')}
               className={`flex-1 py-2.5 px-4 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 ${
                 activeTab === 'current'
                   ? isDark 
-                    ? 'bg-[#36151C] text-[#D4AF37] border border-[#C5A059]/40 shadow' 
-                    : 'bg-[#FFFFFF] text-[#8C2A38] border border-[#8C2A38]/30 shadow'
+                    ? 'bg-[#362A10] text-[#D4AF37] border border-[#C5A059]/40 shadow' 
+                    : 'bg-[#FFFFFF] text-[#B8860B] border border-[#B8860B]/30 shadow'
                   : isDark
-                    ? 'text-[#D1B8BC] hover:text-white'
-                    : 'text-[#5C2B32] hover:text-black'
+                    ? 'text-[#D8CCA8] hover:text-white'
+                    : 'text-[#61502C] hover:text-black'
               }`}
             >
               <HardHat className="w-4 h-4" />
@@ -118,11 +118,11 @@ export const CurrentVsFuture: React.FC = () => {
               className={`flex-1 py-2.5 px-4 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 ${
                 activeTab === 'future'
                   ? isDark 
-                    ? 'bg-[#36151C] text-[#D4AF37] border border-[#C5A059]/40 shadow' 
-                    : 'bg-[#FFFFFF] text-[#8C2A38] border border-[#8C2A38]/30 shadow'
+                    ? 'bg-[#362A10] text-[#D4AF37] border border-[#C5A059]/40 shadow' 
+                    : 'bg-[#FFFFFF] text-[#B8860B] border border-[#B8860B]/30 shadow'
                   : isDark
-                    ? 'text-[#D1B8BC] hover:text-white'
-                    : 'text-[#5C2B32] hover:text-black'
+                    ? 'text-[#D8CCA8] hover:text-white'
+                    : 'text-[#61502C] hover:text-black'
               }`}
             >
               <Cpu className="w-4 h-4" />
@@ -136,9 +136,9 @@ export const CurrentVsFuture: React.FC = () => {
           {activeTab === 'current' ? (
             <div className="space-y-6">
               <div className={`p-4 border rounded-lg text-xs flex items-center justify-between ${
-                isDark ? 'bg-[#2E1218] border-[#4D1E27] text-[#D1B8BC]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#5C2B32]'
+                isDark ? 'bg-[#241E0F] border-[#4A3B18] text-[#D8CCA8]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#61502C]'
               }`}>
-                <span className={`font-semibold ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+                <span className={`font-semibold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {t.currentVsFuture.phase1Title}:
                 </span>
                 <span className="text-[#D4AF37] font-bold">{t.currentVsFuture.phase1Subtitle}</span>
@@ -150,15 +150,15 @@ export const CurrentVsFuture: React.FC = () => {
                     key={idx} 
                     className={`border p-6 rounded-xl transition-colors shadow-sm ${
                       isDark 
-                        ? 'bg-[#2E1218] border-[#4D1E27] hover:border-[#C5A059]' 
-                        : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#8C2A38]'
+                        ? 'bg-[#241E0F] border-[#4A3B18] hover:border-[#C5A059]' 
+                        : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#B8860B]'
                     }`}
                   >
                     <div className="flex items-center gap-2 mb-2">
                       <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
-                      <h3 className={`text-sm font-bold ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>{item.title}</h3>
+                      <h3 className={`text-sm font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>{item.title}</h3>
                     </div>
-                    <p className={`text-xs leading-relaxed ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>{item.desc}</p>
+                    <p className={`text-xs leading-relaxed ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -166,7 +166,7 @@ export const CurrentVsFuture: React.FC = () => {
           ) : (
             <div className="space-y-6">
               <div className={`p-4 border rounded-lg text-xs flex items-center justify-between ${
-                isDark ? 'bg-[#150709] border-[#4D1E27] text-[#FAF3EB]' : 'bg-[#8C2A38] text-white border-[#8C2A38]'
+                isDark ? 'bg-[#100D06] border-[#4A3B18] text-[#FAF3EB]' : 'bg-[#B8860B] text-white border-[#B8860B]'
               }`}>
                 <span className="font-semibold text-[#D4AF37]">{t.currentVsFuture.phase2Title}:</span>
                 <span className="opacity-90">{t.currentVsFuture.phase2Subtitle}</span>
@@ -178,15 +178,15 @@ export const CurrentVsFuture: React.FC = () => {
                     key={idx} 
                     className={`border p-6 rounded-xl transition-colors shadow-sm ${
                       isDark 
-                        ? 'bg-[#150709] border-[#4D1E27] hover:border-[#C5A059]' 
-                        : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#8C2A38]'
+                        ? 'bg-[#100D06] border-[#4A3B18] hover:border-[#C5A059]' 
+                        : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#B8860B]'
                     }`}
                   >
                     <div className="flex items-center gap-2 mb-2">
                       <Sparkles className="w-4 h-4 text-[#D4AF37]" />
-                      <h3 className={`text-sm font-bold ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>{item.title}</h3>
+                      <h3 className={`text-sm font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>{item.title}</h3>
                     </div>
-                    <p className={`text-xs leading-relaxed ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>{item.desc}</p>
+                    <p className={`text-xs leading-relaxed ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>{item.desc}</p>
                   </div>
                 ))}
               </div>

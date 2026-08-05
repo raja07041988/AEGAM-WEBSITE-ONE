@@ -17,13 +17,13 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
 
   return (
     <section className={`relative overflow-hidden border-b transition-colors duration-300 ${
-      isDark ? 'bg-[#1F0B0E] text-[#FAF3EB] border-[#4D1E27]' : 'bg-[#FAF7F2] text-[#2B1015] border-[#E2D5B8]'
+      isDark ? 'bg-[#18140B] text-[#FAF3EB] border-[#4A3B18]' : 'bg-[#FAF7F2] text-[#1C1810] border-[#E2D5B8]'
     }`}>
       {/* Background overlay with subtle industrial image texture */}
       <div className="absolute inset-0 z-0 opacity-15 bg-cover bg-center mix-blend-luminosity" style={{ backgroundImage: `url('/src/assets/images/aegam_hero_industrial_1785940103847.jpg')` }}></div>
       <div className={`absolute inset-0 z-0 ${
         isDark 
-          ? 'bg-gradient-to-r from-[#1F0B0E] via-[#1F0B0E]/90 to-[#1F0B0E]/70' 
+          ? 'bg-gradient-to-r from-[#18140B] via-[#18140B]/90 to-[#18140B]/70' 
           : 'bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/90 to-[#FAF7F2]/70'
       }`}></div>
 
@@ -39,26 +39,26 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
             {/* Badge / Eyebrow */}
             <div className={`inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded border text-[11px] font-bold uppercase tracking-[0.25em] shadow-sm ${
               isDark 
-                ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' 
-                : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#8C2A38]'
+                ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' 
+                : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#B8860B]'
             }`}>
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-pulse"></span>
               <span>AEGAM (ஏகம்)</span>
               <span className="opacity-40">•</span>
-              <span className={`font-normal tracking-wider ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>{t.hero.eyebrow}</span>
+              <span className={`font-normal tracking-wider ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>{t.hero.eyebrow}</span>
             </div>
 
             {/* Main Title */}
             <h1 className={`text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] ${
-              isDark ? 'text-white' : 'text-[#2B1015]'
+              isDark ? 'text-white' : 'text-[#1C1810]'
             }`}>
               {t.hero.titleLine1} <br/>
-              <span className={isDark ? 'text-[#D4AF37]' : 'text-[#8C2A38]'}>{t.hero.titleLine2}</span>
+              <span className={isDark ? 'text-[#D4AF37]' : 'text-[#B8860B]'}>{t.hero.titleLine2}</span>
             </h1>
 
             {/* Subtitle */}
             <p className={`text-sm sm:text-base leading-relaxed max-w-2xl font-normal ${
-              isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+              isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
             }`}>
               {t.hero.subtitle}
             </p>
@@ -69,8 +69,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
                 onClick={() => onNavigate('ecosystem')}
                 className={`px-7 py-3.5 font-bold text-xs uppercase tracking-widest rounded transition-all shadow-xl flex items-center gap-2 group ${
                   isDark 
-                    ? 'bg-[#C5A059] hover:bg-[#D4AF37] text-[#1F0B0E] shadow-[#C5A059]/20' 
-                    : 'bg-[#8C2A38] hover:bg-[#72202C] text-white shadow-[#8C2A38]/20'
+                    ? 'bg-[#C5A059] hover:bg-[#D4AF37] text-[#18140B] shadow-[#C5A059]/20' 
+                    : 'bg-[#B8860B] hover:bg-[#A37409] text-white shadow-[#B8860B]/20'
                 }`}
               >
                 <span>{t.hero.exploreEcosystem}</span>
@@ -81,8 +81,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
                 onClick={() => onNavigate('products')}
                 className={`px-7 py-3.5 border font-bold text-xs uppercase tracking-widest rounded transition-all flex items-center gap-2 ${
                   isDark 
-                    ? 'bg-[#2E1218] hover:bg-[#36151C] text-white border-[#4D1E27]' 
-                    : 'bg-[#FFFFFF] hover:bg-[#F2EAE0] text-[#2B1015] border-[#E2D5B8]'
+                    ? 'bg-[#241E0F] hover:bg-[#362A10] text-white border-[#4A3B18]' 
+                    : 'bg-[#FFFFFF] hover:bg-[#F2EAE0] text-[#1C1810] border-[#E2D5B8]'
                 }`}
               >
                 <Factory className="w-4 h-4 text-[#C5A059]" />
@@ -93,8 +93,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
                 onClick={onOpenInquiry}
                 className={`px-6 py-3.5 border font-bold text-xs uppercase tracking-widest rounded transition-all ${
                   isDark 
-                    ? 'border-[#4D1E27] hover:border-[#C5A059] text-[#D1B8BC] hover:text-white' 
-                    : 'border-[#E2D5B8] hover:border-[#8C2A38] text-[#5C2B32] hover:text-black'
+                    ? 'border-[#4A3B18] hover:border-[#C5A059] text-[#D8CCA8] hover:text-white' 
+                    : 'border-[#E2D5B8] hover:border-[#B8860B] text-[#61502C] hover:text-black'
                 }`}
               >
                 {t.hero.contactUs}
@@ -103,28 +103,28 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
 
             {/* Key Principles Pills */}
             <div className={`pt-6 border-t grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs ${
-              isDark ? 'border-[#4D1E27] text-[#D1B8BC]' : 'border-[#E2D5B8] text-[#5C2B32]'
+              isDark ? 'border-[#4A3B18] text-[#D8CCA8]' : 'border-[#E2D5B8] text-[#61502C]'
             }`}>
               <div>
-                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {isTa ? 'ஏகம் டிரஸ்ட்' : 'AEGAM TRUST'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'நிர்வாக அறக்கட்டளை' : 'Governance Stewardship'}</span>
               </div>
               <div>
-                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
-                  {isTa ? 'ஏகனானேகன்' : 'AEGANANEGAN'}
+                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
+                  {isTa ? 'ஏகன் அநேகன்' : 'AEGAN ANEGAN'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'இயந்திரங்கள் & உற்பத்தி' : 'Machinery & Fabrication'}</span>
               </div>
               <div>
-                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
-                  {isTa ? 'வளரிவன்' : 'VALARIVAN'}
+                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
+                  {isTa ? 'வாலறிவன்' : 'VALARIVAN'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'விற்பனை & வணிகம்' : 'Sales & Distribution'}</span>
               </div>
               <div>
-                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+                <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {isTa ? 'அருளாட்சி' : 'ARULATCHI OPC'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'கொள்முதல் & விநியோகம்' : 'Procurement Supply'}</span>
@@ -137,23 +137,23 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
           <div className="lg:col-span-5">
             <div className={`border border-t-4 rounded p-6 sm:p-8 shadow-2xl relative overflow-hidden ${
               isDark 
-                ? 'bg-[#2E1218] border-[#4D1E27] border-t-[#C5A059]' 
-                : 'bg-[#FFFFFF] border-[#E2D5B8] border-t-[#8C2A38]'
+                ? 'bg-[#241E0F] border-[#4A3B18] border-t-[#C5A059]' 
+                : 'bg-[#FFFFFF] border-[#E2D5B8] border-t-[#B8860B]'
             }`}>
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#D4AF37]/10 rounded-full blur-2xl pointer-events-none"></div>
 
               {/* Card Header */}
               <div className={`flex items-center justify-between pb-4 border-b ${
-                isDark ? 'border-[#4D1E27]' : 'border-[#E2D5B8]'
+                isDark ? 'border-[#4A3B18]' : 'border-[#E2D5B8]'
               }`}>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-[#D4AF37]" />
-                  <span className={`text-xs font-bold uppercase tracking-wider ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+                  <span className={`text-xs font-bold uppercase tracking-wider ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                     {isTa ? 'சுற்றுச்சூழல் அடித்தளம்' : 'Ecosystem Foundation'}
                   </span>
                 </div>
                 <span className={`text-[10px] font-mono px-2 py-0.5 rounded border ${
-                  isDark ? 'bg-[#150709] text-[#D4AF37] border-[#4D1E27]' : 'bg-[#F2EAE0] text-[#8C2A38] border-[#E2D5B8]'
+                  isDark ? 'bg-[#100D06] text-[#D4AF37] border-[#4A3B18]' : 'bg-[#F2EAE0] text-[#B8860B] border-[#E2D5B8]'
                 }`}>
                   {t.hero.visionBadge}
                 </span>
@@ -161,7 +161,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
 
               {/* Machinery Preview Image */}
               <div className={`my-5 relative rounded-lg overflow-hidden border group ${
-                isDark ? 'border-[#4D1E27]' : 'border-[#E2D5B8]'
+                isDark ? 'border-[#4A3B18]' : 'border-[#E2D5B8]'
               }`}>
                 <img
                   src="/src/assets/images/aegam_rotary_oil_machine_1785940118220.jpg"
@@ -187,24 +187,24 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
 
               {/* Quote Card */}
               <div className={`p-4 border rounded space-y-2 ${
-                isDark ? 'bg-[#150709] border-[#4D1E27]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
+                isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
               }`}>
-                <p className={`italic text-xs leading-relaxed ${isDark ? 'text-[#D1B8BC]' : 'text-[#4A1E24]'}`}>
+                <p className={`italic text-xs leading-relaxed ${isDark ? 'text-[#D8CCA8]' : 'text-[#423414]'}`}>
                   &ldquo;{t.hero.quote}&rdquo;
                 </p>
                 <div className={`flex items-center gap-2 pt-1 border-t ${
-                  isDark ? 'border-[#36151C]' : 'border-[#E8DEC8]'
+                  isDark ? 'border-[#362A10]' : 'border-[#E8DEC8]'
                 }`}>
                   <div className={`w-6 h-6 rounded-full font-bold text-[10px] flex items-center justify-center ${
-                    isDark ? 'bg-[#C5A059] text-[#1F0B0E]' : 'bg-[#8C2A38] text-white'
+                    isDark ? 'bg-[#C5A059] text-[#18140B]' : 'bg-[#B8860B] text-white'
                   }`}>
                     ஏ
                   </div>
                   <div>
-                    <span className={`text-[11px] font-bold uppercase block ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+                    <span className={`text-[11px] font-bold uppercase block ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                       {t.hero.quoteAuthor}
                     </span>
-                    <span className={`text-[9px] ${isDark ? 'text-[#D1B8BC]' : 'text-[#704249]'}`}>
+                    <span className={`text-[9px] ${isDark ? 'text-[#D8CCA8]' : 'text-[#786235]'}`}>
                       {t.hero.quoteRole}
                     </span>
                   </div>
@@ -212,13 +212,13 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
               </div>
 
               {/* Quick Link Button */}
-              <div className={`mt-5 pt-4 border-t ${isDark ? 'border-[#4D1E27]' : 'border-[#E2D5B8]'}`}>
+              <div className={`mt-5 pt-4 border-t ${isDark ? 'border-[#4A3B18]' : 'border-[#E2D5B8]'}`}>
                 <button
                   onClick={() => onNavigate('about')}
                   className={`w-full py-2.5 border rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1.5 ${
                     isDark 
-                      ? 'bg-[#150709] hover:bg-[#36151C] text-[#D4AF37] border-[#4D1E27]' 
-                      : 'bg-[#F2EAE0] hover:bg-[#E8DEC8] text-[#8C2A38] border-[#E2D5B8]'
+                      ? 'bg-[#100D06] hover:bg-[#362A10] text-[#D4AF37] border-[#4A3B18]' 
+                      : 'bg-[#F2EAE0] hover:bg-[#E8DEC8] text-[#B8860B] border-[#E2D5B8]'
                   }`}
                 >
                   <span>{isTa ? 'ஏகம் தத்துவத்தைப் படிக்க' : 'Learn About AEGAM Philosophy'}</span>

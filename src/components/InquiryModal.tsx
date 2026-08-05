@@ -56,26 +56,26 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
       <div 
         className={`relative w-full max-w-2xl border rounded-xl shadow-2xl overflow-hidden animate-fadeIn ${
           isDark 
-            ? 'bg-[#150709] text-[#FAF3EB] border-[#4D1E27]' 
-            : 'bg-[#FFFFFF] text-[#2B1015] border-[#E2D5B8]'
+            ? 'bg-[#100D06] text-[#FAF3EB] border-[#4A3B18]' 
+            : 'bg-[#FFFFFF] text-[#1C1810] border-[#E2D5B8]'
         }`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className={`flex items-center justify-between px-6 py-4 border-b ${
-          isDark ? 'bg-[#2E1218] border-[#4D1E27]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
+          isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
         }`}>
           <div>
-            <h3 className={`text-base font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>
+            <h3 className={`text-base font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
               <Building2 className="w-4 h-4 text-[#D4AF37]" />
               {productName ? `${t.modals.inquiryTitle}: ${productName}` : t.modals.inquiryTitle}
             </h3>
-            <p className={`text-xs ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>{t.modals.inquirySub}</p>
+            <p className={`text-xs ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>{t.modals.inquirySub}</p>
           </div>
           <button 
             onClick={resetAndClose}
             className={`p-1.5 rounded-lg transition-colors ${
-              isDark ? 'text-[#D1B8BC] hover:text-white hover:bg-[#36151C]' : 'text-[#5C2B32] hover:text-black hover:bg-[#FAF7F2]'
+              isDark ? 'text-[#D8CCA8] hover:text-white hover:bg-[#362A10]' : 'text-[#61502C] hover:text-black hover:bg-[#FAF7F2]'
             }`}
           >
             <X className="w-5 h-5" />
@@ -89,15 +89,15 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
               <div className="w-14 h-14 mx-auto rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] flex items-center justify-center text-[#D4AF37]">
                 <Check className="w-8 h-8" />
               </div>
-              <h4 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-[#2B1015]'}`}>{t.contact.successTitle}</h4>
-              <p className={`text-sm max-w-md mx-auto leading-relaxed ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>
+              <h4 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>{t.contact.successTitle}</h4>
+              <p className={`text-sm max-w-md mx-auto leading-relaxed ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>
                 {t.contact.successDesc}
               </p>
               <div className="pt-4">
                 <button
                   onClick={resetAndClose}
                   className={`px-6 py-2.5 font-semibold text-xs rounded transition-colors ${
-                    isDark ? 'bg-[#C5A059] text-[#1F0B0E] hover:bg-[#D4AF37]' : 'bg-[#8C2A38] text-white hover:bg-[#72202C]'
+                    isDark ? 'bg-[#C5A059] text-[#18140B] hover:bg-[#D4AF37]' : 'bg-[#B8860B] text-white hover:bg-[#A37409]'
                   }`}
                 >
                   {t.modals.close}
@@ -108,7 +108,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D1B8BC]' : 'text-[#2B1015]'}`}>
+                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D8CCA8]' : 'text-[#1C1810]'}`}>
                     {t.contact.nameLabel}
                   </label>
                   <input
@@ -119,18 +119,18 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className={`w-full px-3.5 py-2 border rounded text-xs outline-none transition-colors ${
                       isDark 
-                        ? 'bg-[#2E1218] border-[#4D1E27] text-white focus:border-[#C5A059] placeholder-[#8C6B71]' 
-                        : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] focus:border-[#8C2A38] placeholder-[#8C6D27]/60'
+                        ? 'bg-[#241E0F] border-[#4A3B18] text-white focus:border-[#C5A059] placeholder-[#998A68]' 
+                        : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B] placeholder-[#8C6D27]/60'
                     }`}
                   />
                 </div>
 
                 <div>
-                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D1B8BC]' : 'text-[#2B1015]'}`}>
+                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D8CCA8]' : 'text-[#1C1810]'}`}>
                     {t.contact.phoneLabel}
                   </label>
                   <div className="relative">
-                    <Phone className={`w-3.5 h-3.5 absolute left-3 top-3 ${isDark ? 'text-[#D1B8BC]' : 'text-[#8C6D27]'}`} />
+                    <Phone className={`w-3.5 h-3.5 absolute left-3 top-3 ${isDark ? 'text-[#D8CCA8]' : 'text-[#8C6D27]'}`} />
                     <input
                       type="tel"
                       required
@@ -139,8 +139,8 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className={`w-full pl-9 pr-3.5 py-2 border rounded text-xs outline-none transition-colors ${
                         isDark 
-                          ? 'bg-[#2E1218] border-[#4D1E27] text-white focus:border-[#C5A059] placeholder-[#8C6B71]' 
-                          : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] focus:border-[#8C2A38] placeholder-[#8C6D27]/60'
+                          ? 'bg-[#241E0F] border-[#4A3B18] text-white focus:border-[#C5A059] placeholder-[#998A68]' 
+                          : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B] placeholder-[#8C6D27]/60'
                       }`}
                     />
                   </div>
@@ -149,11 +149,11 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D1B8BC]' : 'text-[#2B1015]'}`}>
+                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D8CCA8]' : 'text-[#1C1810]'}`}>
                     {t.contact.emailLabel}
                   </label>
                   <div className="relative">
-                    <Mail className={`w-3.5 h-3.5 absolute left-3 top-3 ${isDark ? 'text-[#D1B8BC]' : 'text-[#8C6D27]'}`} />
+                    <Mail className={`w-3.5 h-3.5 absolute left-3 top-3 ${isDark ? 'text-[#D8CCA8]' : 'text-[#8C6D27]'}`} />
                     <input
                       type="email"
                       required
@@ -162,15 +162,15 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className={`w-full pl-9 pr-3.5 py-2 border rounded text-xs outline-none transition-colors ${
                         isDark 
-                          ? 'bg-[#2E1218] border-[#4D1E27] text-white focus:border-[#C5A059] placeholder-[#8C6B71]' 
-                          : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] focus:border-[#8C2A38] placeholder-[#8C6D27]/60'
+                          ? 'bg-[#241E0F] border-[#4A3B18] text-white focus:border-[#C5A059] placeholder-[#998A68]' 
+                          : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B] placeholder-[#8C6D27]/60'
                       }`}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D1B8BC]' : 'text-[#2B1015]'}`}>
+                  <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D8CCA8]' : 'text-[#1C1810]'}`}>
                     {t.contact.orgLabel}
                   </label>
                   <input
@@ -180,15 +180,15 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                     onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                     className={`w-full px-3.5 py-2 border rounded text-xs outline-none transition-colors ${
                       isDark 
-                        ? 'bg-[#2E1218] border-[#4D1E27] text-white focus:border-[#C5A059] placeholder-[#8C6B71]' 
-                        : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] focus:border-[#8C2A38] placeholder-[#8C6D27]/60'
+                        ? 'bg-[#241E0F] border-[#4A3B18] text-white focus:border-[#C5A059] placeholder-[#998A68]' 
+                        : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B] placeholder-[#8C6D27]/60'
                     }`}
                   />
                 </div>
               </div>
 
               <div>
-                <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D1B8BC]' : 'text-[#2B1015]'}`}>
+                <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D8CCA8]' : 'text-[#1C1810]'}`}>
                   {t.contact.purposeLabel}
                 </label>
                 <select
@@ -196,11 +196,11 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value as ContactFormInput['inquiryType'] })}
                   className={`w-full px-3.5 py-2 border rounded text-xs outline-none transition-colors ${
                     isDark 
-                      ? 'bg-[#2E1218] border-[#4D1E27] text-white focus:border-[#C5A059]' 
-                      : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] focus:border-[#8C2A38]'
+                      ? 'bg-[#241E0F] border-[#4A3B18] text-white focus:border-[#C5A059]' 
+                      : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B]'
                   }`}
                 >
-                  <option value="manufacturing">{isTa ? 'இயந்திர உற்பத்தி விசாரணை (ஏகனானேகன்)' : 'Machinery Manufacturing Inquiry (Aegan Anegan)'}</option>
+                  <option value="manufacturing">{isTa ? 'இயந்திர உற்பத்தி விசாரணை (ஏகன் அநேகன்)' : 'Machinery Manufacturing Inquiry (Aegan Anegan)'}</option>
                   <option value="dealership">{isTa ? 'டீலர்ஷிப் / விநியோகஸ்தர் கூட்டாண்மை' : 'Dealership / Distributor Partnership'}</option>
                   <option value="collaboration">{isTa ? 'செயல்பாட்டு ஒத்துழைப்பு' : 'Operational Collaboration'}</option>
                   <option value="partnership">{isTa ? 'மூலோபாய கூட்டாண்மை / நிர்வாகம்' : 'Strategic Partnership / Governance'}</option>
@@ -210,7 +210,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
               </div>
 
               <div>
-                <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D1B8BC]' : 'text-[#2B1015]'}`}>
+                <label className={`block text-xs font-semibold mb-1 ${isDark ? 'text-[#D8CCA8]' : 'text-[#1C1810]'}`}>
                   {t.contact.messageLabel}
                 </label>
                 <textarea
@@ -221,8 +221,8 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className={`w-full px-3.5 py-2 border rounded text-xs outline-none transition-colors ${
                     isDark 
-                      ? 'bg-[#2E1218] border-[#4D1E27] text-white focus:border-[#C5A059] placeholder-[#8C6B71]' 
-                      : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] focus:border-[#8C2A38] placeholder-[#8C6D27]/60'
+                      ? 'bg-[#241E0F] border-[#4A3B18] text-white focus:border-[#C5A059] placeholder-[#998A68]' 
+                      : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B] placeholder-[#8C6D27]/60'
                   }`}
                 ></textarea>
               </div>
@@ -233,9 +233,9 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   id="agreeToTerms"
                   checked={formData.agreeToTerms}
                   onChange={(e) => setFormData({ ...formData, agreeToTerms: e.target.checked })}
-                  className="rounded border-[#4D1E27] text-[#D4AF37] focus:ring-[#D4AF37]"
+                  className="rounded border-[#4A3B18] text-[#D4AF37] focus:ring-[#D4AF37]"
                 />
-                <label htmlFor="agreeToTerms" className={`text-[11px] ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>
+                <label htmlFor="agreeToTerms" className={`text-[11px] ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>
                   {isTa ? 'இந்த விசாரணை தொடர்பாக என்னைத் தொடர்பு கொள்ள ஒப்புக்கொள்கிறேன்.' : 'I agree to be contacted regarding this operational inquiry.'}
                 </label>
               </div>
@@ -245,7 +245,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   type="button"
                   onClick={resetAndClose}
                   className={`px-4 py-2 border rounded text-xs transition-colors ${
-                    isDark ? 'border-[#4D1E27] text-[#D1B8BC] hover:text-white' : 'border-[#E2D5B8] text-[#5C2B32] hover:text-black'
+                    isDark ? 'border-[#4A3B18] text-[#D8CCA8] hover:text-white' : 'border-[#E2D5B8] text-[#61502C] hover:text-black'
                   }`}
                 >
                   {isTa ? 'ரத்துசெய்' : 'Cancel'}
@@ -254,7 +254,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   type="submit"
                   disabled={loading}
                   className={`px-5 py-2 font-bold text-xs rounded transition-colors flex items-center gap-2 ${
-                    isDark ? 'bg-[#C5A059] hover:bg-[#D4AF37] text-[#1F0B0E]' : 'bg-[#8C2A38] hover:bg-[#72202C] text-white'
+                    isDark ? 'bg-[#C5A059] hover:bg-[#D4AF37] text-[#18140B]' : 'bg-[#B8860B] hover:bg-[#A37409] text-white'
                   }`}
                 >
                   {loading ? t.contact.submitting : t.contact.submit}

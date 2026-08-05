@@ -48,7 +48,7 @@ export const ECOSYSTEM_ENTITIES: EcosystemEntity[] = [
   {
     id: 'aegan-anegan-industries',
     name: 'Aegan Anegan Industries Pvt Ltd',
-    taName: 'ஏகன் அனேகன் இண்டஸ்ட்ரீஸ் பிரைவேட் லிமிடெட்',
+    taName: 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் பிரைவேட் லிமிடெட்',
     type: 'Manufacturing & Engineering Entity',
     taType: 'இயந்திர உற்பத்தி & பொறியியல் நிறுவனம்',
     role: 'Industrial Machinery Manufacturing, Fabrication & Engineering',
@@ -56,7 +56,7 @@ export const ECOSYSTEM_ENTITIES: EcosystemEntity[] = [
     shortDescription: 'Core industrial manufacturing hub focused on heavy machinery engineering, rotary oil extraction systems, and workshop fabrication.',
     taShortDescription: 'கனரக இயந்திரங்கள் பொறியியல், ரோட்டரி எண்ணெய் பிழிந்தெடுக்கும் இயந்திரங்கள் மற்றும் பட்டறைத் தயாரிப்பில் கவனம் செலுத்தும் முதன்மை உற்பத்தி மையம்.',
     fullDescription: 'Aegan Anegan Industries Pvt Ltd handles the core engineering, manufacturing, and fabrication operations of the ecosystem. Known for high-precision rotary oil extraction machines and heavy industrial fabrication, it operates with strict workshop discipline and industrial craftsmanship.',
-    taFullDescription: 'ஏகன் அனேகன் இண்டஸ்ட்ரீஸ் நிறுவனம் அமைப்பின் முதன்மை உற்பத்திப் பிரிவாகும். உயர் துல்லியமான ரோட்டரி எண்ணெய் இயந்திரங்கள் மற்றும் கனரக வெல்டிங் தயாரிப்புகளுக்குப் புகழ்பெற்ற இது, மிகக் கடுமையான பட்டறை ஒழுக்கத்துடன் செயல்படுகிறது.',
+    taFullDescription: 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் நிறுவனம் அமைப்பின் முதன்மை உற்பத்திப் பிரிவாகும். உயர் துல்லியமான ரோட்டரி எண்ணெய் இயந்திரங்கள் மற்றும் கனரக வெல்டிங் தயாரிப்புகளுக்குப் புகழ்பெற்ற இது, மிகக் கடுமையான பட்டறை ஒழுக்கத்துடன் செயல்படுகிறது.',
     keyResponsibilities: [
       'Rotary oil extraction machinery engineering & assembly',
       'Heavy metal fabrication & structural engineering',
@@ -93,7 +93,7 @@ export const ECOSYSTEM_ENTITIES: EcosystemEntity[] = [
   {
     id: 'valarivan-industry',
     name: 'Valarivan Industry Pvt Ltd',
-    taName: 'வளரிவன் இண்டஸ்ட்ரி பிரைவேட் லிமிடெட்',
+    taName: 'வாலறிவன் இண்டஸ்ட்ரி பிரைவேட் லிமிடெட்',
     type: 'Commerce & Market Operations Entity',
     taType: 'வணிகம் & சந்தை செயல்பாடுகள் நிறுவனம்',
     role: 'Sales, Distribution, Market Operations & Commerce',
@@ -101,7 +101,7 @@ export const ECOSYSTEM_ENTITIES: EcosystemEntity[] = [
     shortDescription: 'Directs commerce, commercial relationships, client onboarding, dealership networks, and distribution operations.',
     taShortDescription: 'வணிக உறவுகள், வாடிக்கையாளர் சேர்க்கை, டீலர்ஷிப் பிணையங்கள் மற்றும் விநியோகச் செயல்பாடுகளை நிர்வகிக்கிறது.',
     fullDescription: 'Valarivan Industry Pvt Ltd manages the commercial interface of the ecosystem. It is responsible for bridging industrial production with domestic and global markets, structuring dealer and distributor networks, and maintaining transparent commercial relationships.',
-    taFullDescription: 'வளரிவன் இண்டஸ்ட்ரி நிறுவனம் உற்பத்தியை சந்தையுடன் இணைக்கும் வணிகப் பிரிவாகும். டீலர் மற்றும் விநியோகஸ்தர் அமைப்புகளை உருவாக்குவது மற்றும் வெளிப்படையான வர்த்தக உறவுகளைப் பேணுவது இதன் பணியாகும்.',
+    taFullDescription: 'வாலறிவன் இண்டஸ்ட்ரி நிறுவனம் உற்பத்தியை சந்தையுடன் இணைக்கும் வணிகப் பிரிவாகும். டீலர் மற்றும் விநியோகஸ்தர் அமைப்புகளை உருவாக்குவது மற்றும் வெளிப்படையான வர்த்தக உறவுகளைப் பேணுவது இதன் பணியாகும்.',
     keyResponsibilities: [
       'Commercial sales & distribution management',
       'Dealership & franchise network coordination',

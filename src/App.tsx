@@ -36,7 +36,7 @@ function AppContent() {
 
   return (
     <div className={`min-h-screen font-sans antialiased flex flex-col selection:bg-[#C5A059] selection:text-[#1A1816] transition-colors duration-300 ${
-      isDark ? 'bg-[#1F0B0E] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#2B1015]'
+      isDark ? 'bg-[#18140B] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#1C1810]'
     }`}>
       {/* Header Bar */}
       <Header

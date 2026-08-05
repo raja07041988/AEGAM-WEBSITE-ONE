@@ -49,7 +49,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
 
   return (
     <div className={`min-h-screen py-12 lg:py-20 transition-colors duration-300 ${
-      isDark ? 'bg-[#1F0B0E] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#2B1015]'
+      isDark ? 'bg-[#18140B] text-[#FAF3EB]' : 'bg-[#FAF7F2] text-[#1C1810]'
     }`}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
@@ -57,19 +57,19 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className={`inline-flex items-center gap-2 px-3.5 py-1 border rounded-full text-xs font-bold uppercase tracking-wider ${
             isDark 
-              ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' 
-              : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#8C2A38]'
+              ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' 
+              : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#B8860B]'
           }`}>
             <HelpCircle className="w-3.5 h-3.5" />
             <span>{t.faq.eyebrow}</span>
           </div>
           <h1 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${
-            isDark ? 'text-white' : 'text-[#2B1015]'
+            isDark ? 'text-white' : 'text-[#1C1810]'
           }`}>
             {t.faq.title}
           </h1>
           <p className={`text-sm leading-relaxed max-w-2xl mx-auto ${
-            isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+            isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
           }`}>
             {t.faq.subtitle}
           </p>
@@ -77,13 +77,13 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
 
         {/* Search & Category Filter Controls */}
         <div className={`space-y-4 border p-6 rounded-2xl shadow-sm transition-colors duration-300 ${
-          isDark ? 'bg-[#2E1218] border-[#4D1E27]' : 'bg-[#FFFFFF] border-[#E2D5B8]'
+          isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-[#FFFFFF] border-[#E2D5B8]'
         }`}>
           
           {/* Search bar */}
           <div className="relative">
             <Search className={`w-4 h-4 absolute left-3.5 top-3.5 ${
-              isDark ? 'text-[#D1B8BC]' : 'text-[#8C6D27]'
+              isDark ? 'text-[#D8CCA8]' : 'text-[#8C6D27]'
             }`} />
             <input
               type="text"
@@ -92,8 +92,8 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
               onChange={(e) => setSearchQuery(e.target.value)}
               className={`w-full pl-10 pr-4 py-2.5 border rounded-xl text-xs sm:text-sm outline-none transition-colors ${
                 isDark 
-                  ? 'bg-[#150709] border-[#4D1E27] text-[#FAF3EB] placeholder-[#8C6B71] focus:border-[#C5A059]' 
-                  : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#2B1015] placeholder-[#8C6D27]/60 focus:border-[#8C2A38]'
+                  ? 'bg-[#100D06] border-[#4A3B18] text-[#FAF3EB] placeholder-[#998A68] focus:border-[#C5A059]' 
+                  : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] placeholder-[#8C6D27]/60 focus:border-[#B8860B]'
               }`}
             />
           </div>
@@ -101,7 +101,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
           {/* Category Filter Pills */}
           <div className="flex items-center gap-2 overflow-x-auto pt-2 pb-1">
             <span className={`text-xs font-bold uppercase tracking-wider shrink-0 flex items-center gap-1 mr-2 ${
-              isDark ? 'text-[#D4AF37]' : 'text-[#8C2A38]'
+              isDark ? 'text-[#D4AF37]' : 'text-[#B8860B]'
             }`}>
               <Filter className="w-3.5 h-3.5" /> {t.faq.categoryLabel}
             </span>
@@ -115,11 +115,11 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
                   className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all shrink-0 ${
                     isActive
                       ? isDark 
-                        ? 'bg-[#4D1E27] text-[#D4AF37] border border-[#C5A059]/50 shadow' 
-                        : 'bg-[#8C2A38] text-white shadow'
+                        ? 'bg-[#4A3B18] text-[#D4AF37] border border-[#C5A059]/50 shadow' 
+                        : 'bg-[#B8860B] text-white shadow'
                       : isDark
-                        ? 'bg-[#150709] text-[#D1B8BC] hover:bg-[#36151C] border border-[#4D1E27]/40'
-                        : 'bg-[#F2EAE0] text-[#5C2B32] hover:bg-[#E8DEC8]'
+                        ? 'bg-[#100D06] text-[#D8CCA8] hover:bg-[#362A10] border border-[#4A3B18]/40'
+                        : 'bg-[#F2EAE0] text-[#61502C] hover:bg-[#E8DEC8]'
                   }`}
                 >
                   {label}
@@ -134,14 +134,14 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
         <div className="space-y-4">
           {filteredFaqs.length === 0 ? (
             <div className={`p-8 text-center border rounded-2xl ${
-              isDark ? 'bg-[#2E1218] border-[#4D1E27]' : 'bg-[#FFFFFF] border-[#E2D5B8]'
+              isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-[#FFFFFF] border-[#E2D5B8]'
             }`}>
-              <p className={`text-sm ${isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'}`}>
+              <p className={`text-sm ${isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'}`}>
                 {t.faq.noResults} &ldquo;{searchQuery}&rdquo;.
               </p>
               <button
                 onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
-                className={`mt-3 text-xs font-bold underline ${isDark ? 'text-[#D4AF37]' : 'text-[#8C2A38]'}`}
+                className={`mt-3 text-xs font-bold underline ${isDark ? 'text-[#D4AF37]' : 'text-[#B8860B]'}`}
               >
                 {t.faq.resetFilters}
               </button>
@@ -160,42 +160,42 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
                   className={`border rounded-xl overflow-hidden transition-all shadow-sm ${
                     isOpen 
                       ? isDark
-                        ? 'bg-[#2E1218] border-[#C5A059] ring-1 ring-[#C5A059]/30'
-                        : 'bg-[#FFFFFF] border-[#8C2A38] ring-1 ring-[#8C2A38]/20'
+                        ? 'bg-[#241E0F] border-[#C5A059] ring-1 ring-[#C5A059]/30'
+                        : 'bg-[#FFFFFF] border-[#B8860B] ring-1 ring-[#B8860B]/20'
                       : isDark
-                        ? 'bg-[#2E1218]/80 border-[#4D1E27] hover:border-[#C5A059]/50'
-                        : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#8C2A38]/40'
+                        ? 'bg-[#241E0F]/80 border-[#4A3B18] hover:border-[#C5A059]/50'
+                        : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#B8860B]/40'
                   }`}
                 >
                   <button
                     onClick={() => toggleFaq(faq.id)}
                     className={`w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base transition-colors ${
-                      isDark ? 'text-white hover:text-[#D4AF37]' : 'text-[#2B1015] hover:text-[#8C2A38]'
+                      isDark ? 'text-white hover:text-[#D4AF37]' : 'text-[#1C1810] hover:text-[#B8860B]'
                     }`}
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2.5">
                       <span className={`shrink-0 text-xs font-mono px-2.5 py-0.5 rounded border self-start sm:self-auto ${
                         isDark 
-                          ? 'bg-[#150709] text-[#D4AF37] border-[#4D1E27]' 
-                          : 'bg-[#F2EAE0] text-[#8C2A38] border-[#E2D5B8]'
+                          ? 'bg-[#100D06] text-[#D4AF37] border-[#4A3B18]' 
+                          : 'bg-[#F2EAE0] text-[#B8860B] border-[#E2D5B8]'
                       }`}>
                         {category}
                       </span>
                       <span>{question}</span>
                     </div>
                     {isOpen ? (
-                      <ChevronUp className={`w-5 h-5 shrink-0 ${isDark ? 'text-[#D4AF37]' : 'text-[#8C2A38]'}`} />
+                      <ChevronUp className={`w-5 h-5 shrink-0 ${isDark ? 'text-[#D4AF37]' : 'text-[#B8860B]'}`} />
                     ) : (
-                      <ChevronDown className={`w-5 h-5 shrink-0 ${isDark ? 'text-[#D1B8BC]' : 'text-[#8C6D27]'}`} />
+                      <ChevronDown className={`w-5 h-5 shrink-0 ${isDark ? 'text-[#D8CCA8]' : 'text-[#8C6D27]'}`} />
                     )}
                   </button>
 
                   {isOpen && (
                     <div className={`px-5 pb-5 pt-3 border-t space-y-4 animate-fadeIn ${
-                      isDark ? 'border-[#4D1E27]' : 'border-[#F2EAE0]'
+                      isDark ? 'border-[#4A3B18]' : 'border-[#F2EAE0]'
                     }`}>
                       <p className={`text-xs sm:text-sm leading-relaxed ${
-                        isDark ? 'text-[#FAF3EB]' : 'text-[#4A1E24]'
+                        isDark ? 'text-[#FAF3EB]' : 'text-[#423414]'
                       }`}>
                         {answer}
                       </p>
@@ -207,8 +207,8 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
                               key={i} 
                               className={`px-2.5 py-1 text-[11px] font-semibold rounded border ${
                                 isDark 
-                                  ? 'bg-[#150709] border-[#4D1E27] text-[#D4AF37]' 
-                                  : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#8C2A38]'
+                                  ? 'bg-[#100D06] border-[#4A3B18] text-[#D4AF37]' 
+                                  : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#B8860B]'
                               }`}
                             >
                               &bull; {hl}
@@ -227,20 +227,20 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate, onOpenInquiry }) =
         {/* Unresolved Questions CTA Box */}
         <div className={`p-8 border rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl ${
           isDark 
-            ? 'bg-[#150709] border-[#4D1E27] text-[#FAF3EB]' 
-            : 'bg-[#2B1015] border-[#4A1E24] text-white'
+            ? 'bg-[#100D06] border-[#4A3B18] text-[#FAF3EB]' 
+            : 'bg-[#1C1810] border-[#423414] text-white'
         }`}>
           <div className="space-y-1 text-center sm:text-left">
             <h3 className="text-lg font-bold text-white">{t.faq.unresolvedTitle}</h3>
-            <p className="text-xs text-[#D1B8BC]">{t.faq.unresolvedSub}</p>
+            <p className="text-xs text-[#D8CCA8]">{t.faq.unresolvedSub}</p>
           </div>
 
           <button
             onClick={onOpenInquiry}
             className={`shrink-0 px-5 py-2.5 font-bold text-xs rounded-lg transition-colors inline-flex items-center gap-1.5 ${
               isDark 
-                ? 'bg-[#C5A059] hover:bg-[#D4AF37] text-[#1F0B0E]' 
-                : 'bg-[#D4AF37] hover:bg-[#E5C158] text-[#2B1015]'
+                ? 'bg-[#C5A059] hover:bg-[#D4AF37] text-[#18140B]' 
+                : 'bg-[#D4AF37] hover:bg-[#E5C158] text-[#1C1810]'
             }`}
           >
             <span>{t.faq.submitInquiryBtn}</span>

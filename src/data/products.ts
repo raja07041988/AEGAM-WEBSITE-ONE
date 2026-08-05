@@ -10,7 +10,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     tagline: 'High-yield cold-pressed oil extraction system built for continuous industrial operations.',
     taTagline: 'தொடர்ச்சியான தொழில்துறை செயல்பாடுகளுக்காக உருவாக்கப்பட்ட அதிக விளைச்சல் தரும் மரச்செக்கு/ரோட்டரி எண்ணெய் இயந்திரம்.',
     description: 'Engineered by Aegan Anegan Industries Pvt Ltd, this heavy-duty rotary oil extraction machine utilizes traditional cold-press mechanical force combined with heavy cast iron frames and precision-hardened steel gears. Designed for maximum oil output, low seed temperature preservation, and long-term mechanical reliability.',
-    taDescription: 'ஏகன் அனேகன் இண்டஸ்ட்ரீஸ் நிறுவனத்தால் வடிவமைக்கப்பட்ட இந்த கனரக ரோட்டரி எண்ணெய் இயந்திரம், பாரம்பரிய மரச்செக்கு முறையுடன் கனரக இரும்புச் சட்டங்கள் மற்றும் கடினப்படுத்தப்பட்ட கியர்களைப் பயன்படுத்துகிறது. அதிக எண்ணெய் மகசூல் மற்றும் இயந்திர நம்பகத்தன்மைக்காக உருவாக்கப்பட்டது.',
+    taDescription: 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் நிறுவனத்தால் வடிவமைக்கப்பட்ட இந்த கனரக ரோட்டரி எண்ணெய் இயந்திரம், பாரம்பரிய மரச்செக்கு முறையுடன் கனரக இரும்புச் சட்டங்கள் மற்றும் கடினப்படுத்தப்பட்ட கியர்களைப் பயன்படுத்துகிறது. அதிக எண்ணெய் மகசூல் மற்றும் இயந்திர நம்பகத்தன்மைக்காக உருவாக்கப்பட்டது.',
     specifications: [
       { label: 'Extraction Mechanism', value: 'Traditional Cold-Press Rotary Wooden/Cast Core' },
       { label: 'Processing Capacity', value: '80 - 150 kg/hr (Seed Dependent)' },

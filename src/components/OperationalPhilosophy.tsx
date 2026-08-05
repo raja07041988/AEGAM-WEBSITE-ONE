@@ -44,24 +44,24 @@ export const OperationalPhilosophy: React.FC = () => {
 
   return (
     <section className={`py-20 border-t transition-colors duration-300 ${
-      isDark ? 'bg-[#150709] text-[#FAF3EB] border-[#4D1E27]' : 'bg-[#FAF7F2] text-[#2B1015] border-[#E2D5B8]'
+      isDark ? 'bg-[#100D06] text-[#FAF3EB] border-[#4A3B18]' : 'bg-[#FAF7F2] text-[#1C1810] border-[#E2D5B8]'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className={`inline-flex items-center gap-2 px-3.5 py-1 border rounded-full text-xs font-semibold uppercase tracking-wider ${
-            isDark ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#8C2A38]'
+            isDark ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' : 'bg-[#F2EAE0] border-[#E2D5B8] text-[#B8860B]'
           }`}>
             <span>{t.operationalPhilosophy.eyebrow}</span>
           </div>
           <h2 className={`text-2xl sm:text-3xl font-extrabold tracking-tight ${
-            isDark ? 'text-white' : 'text-[#2B1015]'
+            isDark ? 'text-white' : 'text-[#1C1810]'
           }`}>
             {t.operationalPhilosophy.title}
           </h2>
           <p className={`text-xs sm:text-sm leading-relaxed ${
-            isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+            isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
           }`}>
             {t.operationalPhilosophy.subtitle}
           </p>
@@ -74,22 +74,22 @@ export const OperationalPhilosophy: React.FC = () => {
               key={idx}
               className={`border rounded-xl p-6 transition-all shadow-sm group ${
                 isDark 
-                  ? 'bg-[#2E1218] border-[#4D1E27] hover:border-[#C5A059]/50' 
-                  : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#8C2A38]/50'
+                  ? 'bg-[#241E0F] border-[#4A3B18] hover:border-[#C5A059]/50' 
+                  : 'bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#B8860B]/50'
               }`}
             >
               <div className={`p-3 border rounded-lg w-fit mb-4 transition-colors ${
-                isDark ? 'bg-[#150709] border-[#4D1E27] group-hover:border-[#C5A059]/40' : 'bg-[#F2EAE0] border-[#E2D5B8]'
+                isDark ? 'bg-[#100D06] border-[#4A3B18] group-hover:border-[#C5A059]/40' : 'bg-[#F2EAE0] border-[#E2D5B8]'
               }`}>
                 {item.icon}
               </div>
               <h3 className={`text-base font-bold mb-2 transition-colors ${
-                isDark ? 'text-white group-hover:text-[#D4AF37]' : 'text-[#2B1015] group-hover:text-[#8C2A38]'
+                isDark ? 'text-white group-hover:text-[#D4AF37]' : 'text-[#1C1810] group-hover:text-[#B8860B]'
               }`}>
                 {item.title}
               </h3>
               <p className={`text-xs leading-relaxed ${
-                isDark ? 'text-[#D1B8BC]' : 'text-[#5C2B32]'
+                isDark ? 'text-[#D8CCA8]' : 'text-[#61502C]'
               }`}>
                 {item.desc}
               </p>
@@ -100,14 +100,14 @@ export const OperationalPhilosophy: React.FC = () => {
         {/* Etymology Quote Banner */}
         <div className={`mt-14 p-8 border rounded-2xl text-center max-w-4xl mx-auto space-y-3 shadow-lg ${
           isDark 
-            ? 'bg-[#2E1218] border-[#4D1E27]' 
-            : 'bg-[#2B1015] border-[#4A1E24] text-white'
+            ? 'bg-[#241E0F] border-[#4A3B18]' 
+            : 'bg-[#1C1810] border-[#423414] text-white'
         }`}>
           <span className="text-[#D4AF37] font-serif text-3xl font-bold">ஏகம் (AEGAM)</span>
           <h4 className="text-lg font-bold text-white">
             {isTa ? 'பொருள்: அக ஒளியின் மூலமாக ஒருங்கிணைத்தல்' : 'Meaning: Unity Through Inner Light'}
           </h4>
-          <p className="text-xs text-[#D1B8BC] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs text-[#D8CCA8] max-w-2xl mx-auto leading-relaxed">
             &ldquo;{isTa ? 'நீண்ட கால அமைப்புகள் தனித்தனியான போட்டியாலும் துண்டிக்கப்பட்ட செயல்பாடுகளாலும் இயங்கக் கூடாது. தெளிவு, பொறுப்புணர்ச்சி மற்றும் ஒழுக்கம் இணையும் போது, நீண்ட கால நம்பிக்கையும் தொடர்ச்சியும் இயல்பாக உருவாகிறது.' : 'Long-term ecosystems should not operate through isolated competition and disconnected execution. When clarity, responsibility, and operational discipline align, long-term trust and ecosystem continuity naturally follow.'}&rdquo;
           </p>
         </div>

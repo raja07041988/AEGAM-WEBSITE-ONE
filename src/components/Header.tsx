@@ -41,14 +41,14 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className={`sticky top-0 z-40 transition-colors duration-300 backdrop-blur-md border-b ${
       isDark 
-        ? 'bg-[#1F0B0E]/95 border-[#4D1E27]' 
+        ? 'bg-[#18140B]/95 border-[#4A3B18]' 
         : 'bg-[#FAF7F2]/95 border-[#E2D5B8]'
     }`}>
       {/* Top Banner Notice */}
       <div className={`py-1.5 px-4 text-center text-[11px] border-b transition-colors duration-300 ${
         isDark 
-          ? 'bg-[#150709] border-[#36151C] text-[#D1B8BC]' 
-          : 'bg-[#F2EAE0] border-[#E8DEC8] text-[#5C2B32]'
+          ? 'bg-[#100D06] border-[#362A10] text-[#D8CCA8]' 
+          : 'bg-[#F2EAE0] border-[#E8DEC8] text-[#61502C]'
       }`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -73,8 +73,8 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={toggleTheme}
               className={`px-2 py-0.5 border text-[10px] font-bold rounded flex items-center gap-1 transition-all ${
                 isDark 
-                  ? 'bg-[#36151C] hover:bg-[#4D1E27] border-[#C5A059]/40 text-[#D4AF37]' 
-                  : 'bg-[#FFFFFF] hover:bg-[#F2EAE0] border-[#8C6D27]/40 text-[#8C2A38]'
+                  ? 'bg-[#362A10] hover:bg-[#4A3B18] border-[#C5A059]/40 text-[#D4AF37]' 
+                  : 'bg-[#FFFFFF] hover:bg-[#F2EAE0] border-[#8C6D27]/40 text-[#B8860B]'
               }`}
               title="Toggle Color Theme (Cherry Brown / Cream Light)"
             >
@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </>
               ) : (
                 <>
-                  <Moon className="w-3 h-3 text-[#8C2A38]" />
+                  <Moon className="w-3 h-3 text-[#B8860B]" />
                   <span className="hidden xs:inline">Cherry Dark Mode</span>
                 </>
               )}
@@ -96,8 +96,8 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={toggleLanguage}
               className={`px-2.5 py-0.5 border text-[10px] font-bold uppercase rounded flex items-center gap-1.5 transition-all ${
                 isDark 
-                  ? 'bg-[#36151C] hover:bg-[#4D1E27] border-[#C5A059]/40 text-[#D4AF37]' 
-                  : 'bg-[#FFFFFF] hover:bg-[#F2EAE0] border-[#8C6D27]/40 text-[#2B1015]'
+                  ? 'bg-[#362A10] hover:bg-[#4A3B18] border-[#C5A059]/40 text-[#D4AF37]' 
+                  : 'bg-[#FFFFFF] hover:bg-[#F2EAE0] border-[#8C6D27]/40 text-[#1C1810]'
               }`}
               title="Switch Language / மொழியை மாற்றுக"
             >
@@ -118,29 +118,29 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <div className={`w-10 h-10 rounded-lg border flex items-center justify-center shadow-inner transition-all ${
             isDark 
-              ? 'bg-gradient-to-br from-[#36151C] to-[#1F0B0E] border-[#C5A059]/40 group-hover:border-[#C5A059]' 
-              : 'bg-gradient-to-br from-[#FFFFFF] to-[#F2EAE0] border-[#8C6D27]/40 group-hover:border-[#8C2A38]'
+              ? 'bg-gradient-to-br from-[#362A10] to-[#18140B] border-[#C5A059]/40 group-hover:border-[#C5A059]' 
+              : 'bg-gradient-to-br from-[#FFFFFF] to-[#F2EAE0] border-[#8C6D27]/40 group-hover:border-[#B8860B]'
           }`}>
-            <span className={`font-bold text-lg tracking-wider ${isDark ? 'text-[#D4AF37]' : 'text-[#8C2A38]'}`}>ஏ</span>
+            <span className={`font-bold text-lg tracking-wider ${isDark ? 'text-[#D4AF37]' : 'text-[#B8860B]'}`}>ஏ</span>
           </div>
           <div>
             <div className="flex items-center gap-2">
               <span 
                 className={`font-extrabold text-xl tracking-wider font-sans transition-colors ${
-                  isDark ? 'group-hover:text-[#D4AF37]' : 'group-hover:text-[#8C2A38]'
+                  isDark ? 'group-hover:text-[#D4AF37]' : 'group-hover:text-[#B8860B]'
                 }`}
                 style={{ color: '#e8c31c' }}
               >
                 AEGAM
               </span>
               <span className={`text-xs font-semibold tracking-wide border-l pl-2 hidden xs:inline ${
-                isDark ? 'text-[#C5A059] border-[#4D1E27]' : 'text-[#8C2A38] border-[#E2D5B8]'
+                isDark ? 'text-[#C5A059] border-[#4A3B18]' : 'text-[#B8860B] border-[#E2D5B8]'
               }`}>
                 ஏகம்
               </span>
             </div>
             <p className={`text-[10px] tracking-widest uppercase font-mono ${
-              isDark ? 'text-[#D1B8BC]' : 'text-[#704249]'
+              isDark ? 'text-[#D8CCA8]' : 'text-[#786235]'
             }`}>
               Unified Industrial Ecosystem
             </p>
@@ -158,11 +158,11 @@ export const Header: React.FC<HeaderProps> = ({
                 className={`px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider rounded transition-all ${
                   isActive
                     ? isDark 
-                      ? 'text-[#D4AF37] bg-[#36151C] border border-[#C5A059]/50 shadow-sm' 
-                      : 'text-[#8C2A38] bg-[#FFFFFF] border border-[#8C2A38]/30 shadow-sm'
+                      ? 'text-[#D4AF37] bg-[#362A10] border border-[#C5A059]/50 shadow-sm' 
+                      : 'text-[#B8860B] bg-[#FFFFFF] border border-[#B8860B]/30 shadow-sm'
                     : isDark
-                      ? 'text-[#FAF3EB] hover:text-white hover:bg-[#2E1218]'
-                      : 'text-[#4A1E24] hover:text-[#2B1015] hover:bg-[#F2EAE0]'
+                      ? 'text-[#FAF3EB] hover:text-white hover:bg-[#241E0F]'
+                      : 'text-[#423414] hover:text-[#1C1810] hover:bg-[#F2EAE0]'
                 }`}
               >
                 {item.label}
@@ -178,8 +178,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={toggleTheme}
             className={`p-2 rounded-md border transition-all ${
               isDark 
-                ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37] hover:bg-[#36151C]' 
-                : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#8C2A38] hover:bg-[#F2EAE0]'
+                ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37] hover:bg-[#362A10]' 
+                : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#B8860B] hover:bg-[#F2EAE0]'
             }`}
             title="Toggle Color Theme"
           >
@@ -190,8 +190,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={onOpenEosGateway}
             className={`px-3 py-2 text-xs font-semibold rounded-md border transition-all flex items-center gap-1.5 ${
               isDark 
-                ? 'text-[#FAF3EB] hover:text-white bg-[#2E1218] border-[#4D1E27] hover:border-[#C5A059]/40' 
-                : 'text-[#2B1015] hover:text-[#8C2A38] bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#8C2A38]'
+                ? 'text-[#FAF3EB] hover:text-white bg-[#241E0F] border-[#4A3B18] hover:border-[#C5A059]/40' 
+                : 'text-[#1C1810] hover:text-[#B8860B] bg-[#FFFFFF] border-[#E2D5B8] hover:border-[#B8860B]'
             }`}
             title="Preview Ecosystem Operating System & Gateway"
           >
@@ -203,8 +203,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={onOpenInquiry}
             className={`px-4 py-2 text-xs font-bold rounded-md transition-all shadow-md flex items-center gap-1 ${
               isDark 
-                ? 'text-[#1F0B0E] bg-[#C5A059] hover:bg-[#D4AF37]' 
-                : 'text-white bg-[#8C2A38] hover:bg-[#72202C]'
+                ? 'text-[#18140B] bg-[#C5A059] hover:bg-[#D4AF37]' 
+                : 'text-white bg-[#B8860B] hover:bg-[#A37409]'
             }`}
           >
             <span>{t.nav.inquiry}</span>
@@ -218,8 +218,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={toggleTheme}
             className={`p-2 border rounded-md ${
               isDark 
-                ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' 
-                : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#8C2A38]'
+                ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' 
+                : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#B8860B]'
             }`}
             aria-label="Toggle Theme"
           >
@@ -229,7 +229,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             onClick={onOpenEosGateway}
             className={`p-2 border rounded-md sm:hidden ${
-              isDark ? 'bg-[#2E1218] border-[#4D1E27] text-[#C5A059]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#8C2A38]'
+              isDark ? 'bg-[#241E0F] border-[#4A3B18] text-[#C5A059]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#B8860B]'
             }`}
             aria-label="EOS Gateway"
           >
@@ -239,7 +239,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`p-2 rounded-md focus:outline-none ${
-              isDark ? 'text-[#FAF3EB] hover:bg-[#2E1218]' : 'text-[#2B1015] hover:bg-[#F2EAE0]'
+              isDark ? 'text-[#FAF3EB] hover:bg-[#241E0F]' : 'text-[#1C1810] hover:bg-[#F2EAE0]'
             }`}
             aria-label="Toggle navigation menu"
           >
@@ -251,14 +251,14 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className={`lg:hidden border-b px-4 pt-2 pb-6 space-y-2 animate-fadeIn ${
-          isDark ? 'bg-[#150709] border-[#4D1E27]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
+          isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
         }`}>
           {/* Language & Theme Controls in Mobile Menu */}
           <div className="flex items-center justify-between pb-3 border-b border-opacity-30 border-gray-500">
             <button
               onClick={toggleLanguage}
               className={`px-3 py-1.5 text-xs font-bold rounded flex items-center gap-2 border ${
-                isDark ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#8C2A38]'
+                isDark ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#B8860B]'
               }`}
             >
               <Globe className="w-4 h-4" />
@@ -268,7 +268,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={toggleTheme}
               className={`px-3 py-1.5 text-xs font-bold rounded flex items-center gap-2 border ${
-                isDark ? 'bg-[#2E1218] border-[#4D1E27] text-[#D4AF37]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#8C2A38]'
+                isDark ? 'bg-[#241E0F] border-[#4A3B18] text-[#D4AF37]' : 'bg-[#FFFFFF] border-[#E2D5B8] text-[#B8860B]'
               }`}
             >
               {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
@@ -285,11 +285,11 @@ export const Header: React.FC<HeaderProps> = ({
                 className={`w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-colors flex items-center justify-between ${
                   isActive
                     ? isDark
-                      ? 'text-[#D4AF37] bg-[#36151C] border border-[#C5A059]/40 font-semibold'
-                      : 'text-[#8C2A38] bg-[#FFFFFF] border border-[#8C2A38]/30 font-semibold'
+                      ? 'text-[#D4AF37] bg-[#362A10] border border-[#C5A059]/40 font-semibold'
+                      : 'text-[#B8860B] bg-[#FFFFFF] border border-[#B8860B]/30 font-semibold'
                     : isDark
-                      ? 'text-[#FAF3EB] hover:bg-[#2E1218]'
-                      : 'text-[#2B1015] hover:bg-[#F2EAE0]'
+                      ? 'text-[#FAF3EB] hover:bg-[#241E0F]'
+                      : 'text-[#1C1810] hover:bg-[#F2EAE0]'
                 }`}
               >
                 <span>{item.label}</span>
@@ -305,7 +305,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onOpenEosGateway();
               }}
               className={`w-full py-2.5 px-4 text-xs font-semibold rounded-lg flex items-center justify-center gap-2 border ${
-                isDark ? 'text-[#FAF3EB] bg-[#2E1218] border-[#4D1E27]' : 'text-[#2B1015] bg-[#FFFFFF] border-[#E2D5B8]'
+                isDark ? 'text-[#FAF3EB] bg-[#241E0F] border-[#4A3B18]' : 'text-[#1C1810] bg-[#FFFFFF] border-[#E2D5B8]'
               }`}
             >
               <Cpu className="w-4 h-4 text-[#C5A059]" />
@@ -318,7 +318,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onOpenInquiry();
               }}
               className={`w-full py-2.5 px-4 text-xs font-bold rounded-lg text-center ${
-                isDark ? 'text-[#1F0B0E] bg-[#C5A059]' : 'text-white bg-[#8C2A38]'
+                isDark ? 'text-[#18140B] bg-[#C5A059]' : 'text-white bg-[#B8860B]'
               }`}
             >
               {t.nav.inquiry}
