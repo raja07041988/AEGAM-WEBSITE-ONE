@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, Shield, Lock, Cpu, Server, CheckCircle2, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
@@ -14,10 +14,26 @@ export const EosGatewayModal: React.FC<EosGatewayModalProps> = ({ isOpen, onClos
 
   const isTa = language === 'ta';
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="eos-modal-title"
+      onClick={onClose}
+    >
       <div 
         className={`relative w-full max-w-3xl border rounded-xl shadow-2xl overflow-hidden animate-fadeIn ${
           isDark 
@@ -36,7 +52,7 @@ export const EosGatewayModal: React.FC<EosGatewayModalProps> = ({ isOpen, onClos
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className={`font-bold tracking-wider ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
+                <span id="eos-modal-title" className={`font-bold tracking-wider ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {isTa ? 'ஏகம் EOS கேட்வே' : 'AEGAM EOS GATEWAY'}
                 </span>
                 <span className="px-2 py-0.5 text-[10px] uppercase font-semibold bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/30 rounded">

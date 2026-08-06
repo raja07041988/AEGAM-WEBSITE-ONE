@@ -121,6 +121,7 @@ export const InfrastructurePage: React.FC<InfrastructurePageProps> = ({ onNaviga
                   <img
                     src={fac.image}
                     alt={title}
+                    loading="lazy"
                     className="w-full h-full object-cover min-h-[320px]"
                     referrerPolicy="no-referrer"
                   />

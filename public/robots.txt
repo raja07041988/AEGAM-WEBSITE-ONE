@@ -1,0 +1,10 @@
+# AEGAM Ecosystem robots.txt
+User-agent: *
+Allow: /
+
+# Disallow draft or internal assets if any
+Disallow: /api/
+Disallow: /draft/
+
+# Sitemap location
+Sitemap: https://aegam.in/sitemap.xml

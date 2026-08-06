@@ -1,4 +1,5 @@
 import { GalleryItem } from '../types';
+import { imgRotaryMachine, imgHeroIndustrial, imgCampusFacility } from '../assets/images';
 
 export const GALLERY_DATA: GalleryItem[] = [
   {
@@ -7,7 +8,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taTitle: 'ரோட்டரி இயந்திர இறுதி மேஜை சோதனை',
     category: 'Machinery',
     taCategory: 'இயந்திரங்கள்',
-    image: '/src/assets/images/aegam_rotary_oil_machine_1785940118220.jpg',
+    image: imgRotaryMachine,
     caption: 'Heavy rotary oil machine undergoing continuous load trial at Aegan Anegan workshop bay.',
     taCaption: 'ஏகன் அநேகன் பட்டறையில் தொடர்ச்சியான சுமை சோதனையில் இருக்கும் கனரக ரோட்டரி எண்ணெய் இயந்திரம்.'
   },
@@ -17,7 +18,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taTitle: 'துல்லிய லேத் ஷாஃப்ட் வேலைகள்',
     category: 'Engineering',
     taCategory: 'பொறியியல்',
-    image: '/src/assets/images/aegam_hero_industrial_1785940103847.jpg',
+    image: imgHeroIndustrial,
     caption: 'Machining high-torque alloy steel shafts for heavy-duty rotary expellers.',
     taCaption: 'கனரக ரோட்டரி எக்ஸ்பெல்லர்களுக்கான உயர் முறுக்குவிசை எஃகு தண்டுகளை செயலாக்குதல்.'
   },
@@ -37,7 +38,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taTitle: 'ஏகம் தொழில்துறை வளாக முதன்மை கட்டிடம்',
     category: 'Campus',
     taCategory: 'வளாகம்',
-    image: '/src/assets/images/aegam_campus_facility_1785940130717.jpg',
+    image: imgCampusFacility,
     caption: 'Administrative & governance hub coordinating AEGAM participating entities.',
     taCaption: 'ஏகம் நிறுவனங்களை ஒருங்கிணைக்கும் நிர்வாக மற்றும் ஆளுமை மையம்.'
   },

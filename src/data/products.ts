@@ -1,4 +1,5 @@
 import { ProductItem } from '../types';
+import { imgRotaryMachine, imgHeroIndustrial } from '../assets/images';
 
 export const PRODUCTS_DATA: ProductItem[] = [
   {
@@ -49,7 +50,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     taCapacity: 'மணிக்கு 100 - 150 கிலோ',
     powerRequirement: '10 HP 3-Phase',
     taPowerRequirement: '10 எச்பி த்ரீ-பேஸ்',
-    image: '/src/assets/images/aegam_rotary_oil_machine_1785940118220.jpg',
+    image: imgRotaryMachine,
     isFlagship: true,
     externalLink: 'https://www.aeganai.in'
   },
@@ -137,7 +138,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     taCapacity: 'தேவைக்கேற்ப',
     powerRequirement: 'Industrial Standard',
     taPowerRequirement: 'தொழில்துறை தரம்',
-    image: '/src/assets/images/aegam_hero_industrial_1785940103847.jpg',
+    image: imgHeroIndustrial,
     isFlagship: false,
     externalLink: 'https://www.aeganai.in'
   }

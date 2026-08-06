@@ -3,6 +3,7 @@ import { PageRoute, ContactFormInput } from '../types';
 import { Mail, Phone, MapPin, Send, CheckCircle2, MessageSquare, ExternalLink, Globe } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
+import { imgCampusFacility } from '../assets/images';
 
 interface ContactPageProps {
   onNavigate: (page: PageRoute) => void;
@@ -386,8 +387,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#1C1810] border-[#E2D5B8]'
               }`}>
                 <img
-                  src="/src/assets/images/aegam_campus_facility_1785940130717.jpg"
-                  alt="AEGAM Campus Map Location"
+                  src={imgCampusFacility}
+                  alt="AEGAM Campus Location"
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80"
                   referrerPolicy="no-referrer"
                 />

@@ -122,6 +122,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate, onOpenIn
                     <img
                       src={product.image}
                       alt={pName}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-95"
                       referrerPolicy="no-referrer"
                     />

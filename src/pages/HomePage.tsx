@@ -9,6 +9,7 @@ import { OperationalPhilosophy } from '../components/OperationalPhilosophy';
 import { Camera } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
+import { imgRotaryMachine, imgHeroIndustrial, imgCampusFacility } from '../assets/images';
 
 interface HomePageProps {
   onNavigate: (page: PageRoute) => void;
@@ -198,7 +199,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className={`border rounded-xl overflow-hidden shadow-sm ${
               isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-white border-[#E2D5B8]'
             }`}>
-              <img src="/src/assets/images/aegam_rotary_oil_machine_1785940118220.jpg" alt="Rotary Oil Press Machine" className="w-full h-48 object-cover" />
+              <img src={imgRotaryMachine} alt="Rotary Oil Press Machine" loading="lazy" className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className={`text-xs font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {isTa ? 'வணிக ரோட்டரி எண்ணெய் பிழிந்தெடுக்கும் அலகு' : 'Commercial Rotary Oil Extraction Unit'}
@@ -212,7 +213,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className={`border rounded-xl overflow-hidden shadow-sm ${
               isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-white border-[#E2D5B8]'
             }`}>
-              <img src="/src/assets/images/aegam_hero_industrial_1785940103847.jpg" alt="Workshop Assembly Bay" className="w-full h-48 object-cover" />
+              <img src={imgHeroIndustrial} alt="Workshop Assembly Bay" loading="lazy" className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className={`text-xs font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {isTa ? 'கனரக லேத் & பிரேம் தயாரிப்பு தளம்' : 'Heavy Lathe & Frame Fabrication Bay'}
@@ -226,7 +227,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className={`border rounded-xl overflow-hidden shadow-sm ${
               isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-white border-[#E2D5B8]'
             }`}>
-              <img src="/src/assets/images/aegam_campus_facility_1785940130717.jpg" alt="AEGAM Industrial Campus" className="w-full h-48 object-cover" />
+              <img src={imgCampusFacility} alt="AEGAM Industrial Campus" loading="lazy" className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className={`text-xs font-bold ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
                   {isTa ? 'ஏகம் தொழில்துறை வளாகம் & நிர்வாக மையம்' : 'AEGAM Campus & Governance Center'}

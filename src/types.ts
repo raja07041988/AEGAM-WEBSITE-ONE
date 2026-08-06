@@ -10,7 +10,8 @@ export type PageRoute =
   | 'infrastructure'
   | 'gallery'
   | 'faq'
-  | 'contact';
+  | 'contact'
+  | 'not-found';
 
 export interface EcosystemEntity {
   id: string;

@@ -80,6 +80,7 @@ export const ManufacturingHighlight: React.FC<ManufacturingHighlightProps> = ({
               <img
                 src={flagship.image}
                 alt={name}
+                loading="lazy"
                 className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />

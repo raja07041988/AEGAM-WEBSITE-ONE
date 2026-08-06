@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Send, Check, Building2, Phone, Mail } from 'lucide-react';
 import { ContactFormInput } from '../types';
 import { useLanguage } from '../context/LanguageContext';
@@ -35,6 +35,16 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -52,7 +62,13 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="inquiry-modal-title"
+      onClick={resetAndClose}
+    >
       <div 
         className={`relative w-full max-w-2xl border rounded-xl shadow-2xl overflow-hidden animate-fadeIn ${
           isDark 
@@ -66,7 +82,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
           isDark ? 'bg-[#241E0F] border-[#4A3B18]' : 'bg-[#F2EAE0] border-[#E2D5B8]'
         }`}>
           <div>
-            <h3 className={`text-base font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
+            <h3 id="inquiry-modal-title" className={`text-base font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
               <Building2 className="w-4 h-4 text-[#D4AF37]" />
               {productName ? `${t.modals.inquiryTitle}: ${productName}` : t.modals.inquiryTitle}
             </h3>
@@ -74,6 +90,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
           </div>
           <button 
             onClick={resetAndClose}
+            aria-label="Close modal"
             className={`p-1.5 rounded-lg transition-colors ${
               isDark ? 'text-[#D8CCA8] hover:text-white hover:bg-[#362A10]' : 'text-[#61502C] hover:text-black hover:bg-[#FAF7F2]'
             }`}

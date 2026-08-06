@@ -1,0 +1,23 @@
+{
+  "short_name": "AEGAM",
+  "name": "AEGAM — Industrial Machinery & Governance Ecosystem",
+  "description": "Unified industrial ecosystem engineering heavy rotary oil extraction machinery, industrial fabrication, stewardship governance, and structured commerce operations.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512 192x192 64x64 32x32"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#18140B",
+  "theme_color": "#D4AF37",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en"
+}

@@ -3,6 +3,7 @@ import { PageRoute } from '../types';
 import { ArrowRight, Factory, ShieldCheck, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
+import { imgHeroIndustrial, imgRotaryMachine } from '../assets/images';
 
 interface HeroProps {
   onNavigate: (page: PageRoute) => void;
@@ -20,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
       isDark ? 'bg-[#18140B] text-[#FAF3EB] border-[#4A3B18]' : 'bg-[#FAF7F2] text-[#1C1810] border-[#E2D5B8]'
     }`}>
       {/* Background overlay with subtle industrial image texture */}
-      <div className="absolute inset-0 z-0 opacity-15 bg-cover bg-center mix-blend-luminosity" style={{ backgroundImage: `url('/src/assets/images/aegam_hero_industrial_1785940103847.jpg')` }}></div>
+      <div className="absolute inset-0 z-0 opacity-15 bg-cover bg-center mix-blend-luminosity" style={{ backgroundImage: `url(${imgHeroIndustrial})` }}></div>
       <div className={`absolute inset-0 z-0 ${
         isDark 
           ? 'bg-gradient-to-r from-[#18140B] via-[#18140B]/90 to-[#18140B]/70' 
@@ -164,7 +165,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
                 isDark ? 'border-[#4A3B18]' : 'border-[#E2D5B8]'
               }`}>
                 <img
-                  src="/src/assets/images/aegam_rotary_oil_machine_1785940118220.jpg"
+                  src={imgRotaryMachine}
                   alt="Aegan Anegan Rotary Oil Machine"
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"

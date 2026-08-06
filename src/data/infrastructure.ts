@@ -1,4 +1,5 @@
 import { InfrastructureFacility } from '../types';
+import { imgHeroIndustrial, imgCampusFacility } from '../assets/images';
 
 export const INFRASTRUCTURE_DATA: InfrastructureFacility[] = [
   {
@@ -21,7 +22,7 @@ export const INFRASTRUCTURE_DATA: InfrastructureFacility[] = [
       'ரோட்டரி எண்ணெய் இயந்திர அசெம்பிளி நிலையங்கள்',
       'அதிர்வு சோதனை மற்றும் 24 மணிநேர சோதனை தளங்கள்'
     ],
-    image: '/src/assets/images/aegam_hero_industrial_1785940103847.jpg',
+    image: imgHeroIndustrial,
     category: 'workshop',
     taCategory: 'பட்டறை'
   },
@@ -93,7 +94,7 @@ export const INFRASTRUCTURE_DATA: InfrastructureFacility[] = [
       'பங்குதாரர் மாநாட்டு அரங்கம்',
       'எதிர்கால விரிவாக்க நிலப்பரப்பு'
     ],
-    image: '/src/assets/images/aegam_campus_facility_1785940130717.jpg',
+    image: imgCampusFacility,
     category: 'campus',
     taCategory: 'வளாகம்'
   }
