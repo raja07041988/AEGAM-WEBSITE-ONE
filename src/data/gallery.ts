@@ -28,7 +28,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taTitle: 'இயந்திர சட்ட எஃகு வெல்டிங்',
     category: 'Fabrication',
     taCategory: 'தயாரிப்பு',
-    image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80',
+    image: imgHeroIndustrial,
     caption: 'Certified MIG welding of heavy structural chassis for industrial equipment.',
     taCaption: 'தொழில்துறை உபகரணங்களுக்கான கனரக சேசிஸின் சான்றளிக்கப்பட்ட எம்ஐஜி வெல்டிங்.'
   },
@@ -48,7 +48,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taTitle: 'மூலப்பொருள் & உதிரிபாகங்கள் சேமிப்பகம்',
     category: 'Operations',
     taCategory: 'செயல்பாடுகள்',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
+    image: imgCampusFacility,
     caption: 'High-grade steel stock & electrical drive inventory prepared for production assembly.',
     taCaption: 'உற்பத்தி அசெம்பிளிக்காக தயார் செய்யப்பட்ட உயர்தர எஃகு மற்றும் மின்சார மோட்டார் சரக்கு.'
   },
@@ -58,7 +58,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     taTitle: 'வணிகரீதியான எக்ஸ்பெல்லர் அசெம்பிளி பிரிவு',
     category: 'Workshop',
     taCategory: 'பட்டறை',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+    image: imgRotaryMachine,
     caption: 'Assembly testing for 50kg/hr commercial rotary oil extraction units.',
     taCaption: 'மணிக்கு 50 கிலோ திறன் கொண்ட வணிக ரோட்டரி எண்ணெய் இயந்திரங்களின் அசெம்பிளி சோதனை.'
   }

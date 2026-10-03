@@ -14,13 +14,13 @@ export const INFRASTRUCTURE_DATA: InfrastructureFacility[] = [
       'Heavy duty overhead crane & hoist handling',
       'Precision mechanical torque & alignment test benches',
       'Dedicated rotary oil expeller assembly stations',
-      'Vibration testing and 24-hr trial operation bays'
+      'Vibration testing and 48-hr trial operation bays'
     ],
     taKeySpecs: [
       'கனரக ஓவர்ஹெட் கிரேன் & தூக்கும் வசதி',
       'துல்லியமான முறுக்குவிசை மற்றும் சீரமைப்பு சோதனை மேசைகள்',
       'ரோட்டரி எண்ணெய் இயந்திர அசெம்பிளி நிலையங்கள்',
-      'அதிர்வு சோதனை மற்றும் 24 மணிநேர சோதனை தளங்கள்'
+      'அதிர்வு சோதனை மற்றும் 48 மணிநேர சோதனை தளங்கள்'
     ],
     image: imgHeroIndustrial,
     category: 'workshop',
@@ -46,7 +46,7 @@ export const INFRASTRUCTURE_DATA: InfrastructureFacility[] = [
       'கனரக எஃகு வெல்டிங் ஜிக் அமைப்புகள்',
       'மேற்பரப்பு தயாரிப்பு மற்றும் தொழில்துறை பூச்சு'
     ],
-    image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80',
+    image: imgHeroIndustrial,
     category: 'fabrication',
     taCategory: 'தயாரிப்பு'
   },
@@ -70,7 +70,7 @@ export const INFRASTRUCTURE_DATA: InfrastructureFacility[] = [
       'இயந்திரங்கள் ஏற்றுமதி செய்வதற்கான நேரடி தளங்கள்',
       'முறையான பொருட்கள் கண்காணிப்பு'
     ],
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
+    image: imgCampusFacility,
     category: 'coordination',
     taCategory: 'ஒருங்கிணைப்பு'
   },

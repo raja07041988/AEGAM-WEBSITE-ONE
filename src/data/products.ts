@@ -19,7 +19,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
       { label: 'Drive Unit', value: 'Heavy Duty Helical Gearbox with High Torque Motor' },
       { label: 'Power Requirement', value: '7.5 HP - 12.5 HP Three-Phase Motor' },
       { label: 'Suitable Oilseeds', value: 'Sesame, Groundnut, Coconut, Mustard, Sunflower' },
-      { label: 'Operational Duty', value: 'Continuous 24/7 Industrial Rating' },
+      { label: 'Operational Duty', value: 'Engineered for Heavy Commercial Operation' },
       { label: 'Maintenance Interval', value: 'Low maintenance with accessible lubrication ports' }
     ],
     taSpecifications: [
@@ -29,7 +29,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
       { label: 'மோட்டார் அலகு', value: 'ஹெலிகல் கியர்பாக்ஸ் & உயர் டார்க் மோட்டார்' },
       { label: 'மின்சாரத் தேவை', value: '7.5 எச்பி - 12.5 எச்பி த்ரீ-பேஸ் மோட்டார்' },
       { label: 'பொருத்தமான விதைகள்', value: 'எள், நிலக்கடலை, தேங்காய், கடுகு, சூரியகாந்தி' },
-      { label: 'செயல்பாட்டு நேரம்', value: 'தொடர்ச்சியான 24/7 தொழில்துறை திறன்' },
+      { label: 'செயல்பாட்டு நேரம்', value: 'கனரக வணிக பயன்பாட்டிற்காக வடிவமைக்கப்பட்டது' },
       { label: 'பராமரிப்பு', value: 'எளிதான மசகு வசதியுடன் குறைந்த பராமரிப்பு' }
     ],
     features: [
@@ -96,7 +96,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     taCapacity: 'மணிக்கு 50 - 70 கிலோ',
     powerRequirement: '5 HP 3-Phase',
     taPowerRequirement: '5 எச்பி த்ரீ-பேஸ்',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+    image: imgRotaryMachine,
     isFlagship: false,
     externalLink: 'https://www.aeganai.in'
   },
@@ -114,13 +114,13 @@ export const PRODUCTS_DATA: ProductItem[] = [
       { label: 'Materials Handled', value: 'Mild Steel, Stainless Steel (304/316), Carbon Steel' },
       { label: 'Machining Capabilities', value: 'Precision Milling, Heavy Turning, Boring, CNC Flame Cutting' },
       { label: 'Welding Standards', value: 'TIG, MIG, Submerged Arc Welding with NDT Quality Checks' },
-      { label: 'Assembly Capacity', value: 'Up to 25 Ton Single Component Handling' }
+      { label: 'Assembly Capacity', value: 'Equipped for Heavy Structural & Machine Assembly' }
     ],
     taSpecifications: [
       { label: 'பயன்படுத்தப்படும் பொருட்கள்', value: 'மைல்ட் ஸ்டீல், ஸ்டெயின்லெஸ் ஸ்டீல் (304/316), கார்பன் ஸ்டீல்' },
       { label: 'இயந்திர திறன்கள்', value: 'மில்லிங், ஹெவி டர்னிங், போரிங், சிஎன்சி கட்டிங்' },
       { label: 'வெல்டிங் தரம்', value: 'டிஐஜி, எம்ஐஜி வெல்டிங் மற்றும் தரக் கட்டுப்பாடு' },
-      { label: 'தயாரிப்புத் திறன்', value: '25 டன் வரை ஒற்றைப் பாகங்கள் கையாளும் வசதி' }
+      { label: 'தயாரிப்புத் திறன்', value: 'கனரக கட்டமைப்பு மற்றும் இயந்திரங்கள் அசெம்பிளி செய்யும் வசதி' }
     ],
     features: [
       'Custom machinery framework and enclosure manufacturing',

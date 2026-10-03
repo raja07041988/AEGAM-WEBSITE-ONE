@@ -100,7 +100,7 @@ export const ECOSYSTEM_ENTITIES: EcosystemEntity[] = [
     taRole: 'விற்பனை, விநியோகம், சந்தை செயல்பாடுகள் & வணிகம்',
     shortDescription: 'Directs commerce, commercial relationships, client onboarding, dealership networks, and distribution operations.',
     taShortDescription: 'வணிக உறவுகள், வாடிக்கையாளர் சேர்க்கை, டீலர்ஷிப் பிணையங்கள் மற்றும் விநியோகச் செயல்பாடுகளை நிர்வகிக்கிறது.',
-    fullDescription: 'Valarivan Industry Pvt Ltd manages the commercial interface of the ecosystem. It is responsible for bridging industrial production with domestic and global markets, structuring dealer and distributor networks, and maintaining transparent commercial relationships.',
+    fullDescription: 'Valarivan Industry Pvt Ltd manages the commercial interface of the ecosystem. It is responsible for bridging industrial production with regional and domestic commercial markets, structuring dealer and distributor networks, and maintaining transparent commercial relationships.',
     taFullDescription: 'வாலறிவன் இண்டஸ்ட்ரி நிறுவனம் உற்பத்தியை சந்தையுடன் இணைக்கும் வணிகப் பிரிவாகும். டீலர் மற்றும் விநியோகஸ்தர் அமைப்புகளை உருவாக்குவது மற்றும் வெளிப்படையான வர்த்தக உறவுகளைப் பேணுவது இதன் பணியாகும்.',
     keyResponsibilities: [
       'Commercial sales & distribution management',
