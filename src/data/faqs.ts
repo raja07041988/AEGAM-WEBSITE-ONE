@@ -61,7 +61,7 @@ export const FAQS_DATA: FaqItem[] = [
     question: 'Why does AEGAM have multiple entities?',
     taQuestion: 'ஏகம் ஏன் பல பிரத்யேக நிறுவனங்களைக் கொண்டுள்ளது?',
     answer: 'Different operational areas require specialized structures, focused responsibilities, and clear accountabilities. The ecosystem operates through specialized entities supporting: 1) Governance & Stewardship (AEGAM TRUST), 2) Machinery & Manufacturing (Aegan Anegan Industries Pvt Ltd), 3) Sales & Commerce (Valarivan Industry Pvt Ltd), and 4) Procurement & Supply Chain (Arulatchi OPC Pvt Ltd). This structure supports operational clarity and long-term scalability.',
-    taAnswer: 'வெவ்வேறு செயல்பாடுகளுக்கு பிரத்யேக கவனம் மற்றும் தெளிவான பொறுப்புகள் தேவை. எனவே ஏகம் 4 சிறப்பு நிறுவனங்களாகச் செயல்படுகிறது: 1) நிர்வாகம் (ஏகம் டிரஸ்ட்), 2) இயந்திர உற்பத்தி (ஏகன் அநேகன்), 3) விற்பனை & வணிகம் (வாலறிவன்), 4) மூலப்பொருள் கொள்முதல் (அருளாட்சி). இந்த அமைப்பு தெளிவையும் திறனையும் அளிக்கிறது.',
+    taAnswer: 'வெவ்வேறு செயல்பாடுகளுக்கு பிரத்யேக கவனம் மற்றும் தெளிவான பொறுப்புகள் தேவை. எனவே ஏகம் 4 சிறப்பு நிறுவனங்களாகச் செயல்படுகிறது: 1) நிர்வாகம் (ஏகம் டிரஸ்ட்), 2) இயந்திர உற்பத்தி (ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் பிரைவேட் லிமிடெட்), 3) விற்பனை & வணிகம் (வாலறிவன் இண்டஸ்ட்ரி பிரைவேட் லிமிடெட்), 4) மூலப்பொருள் கொள்முதல் (அருளாட்சி ஒபிசி பிரைவேட் லிமிடெட்). இந்த அமைப்பு தெளிவையும் திறனையும் அளிக்கிறது.',
     category: 'Ecosystem Structure',
     taCategory: 'சுற்றுச்சூழல் கட்டமைப்பு',
     highlights: ['Specialized operational focus', 'Boundary clarity', 'Defined responsibilities', 'Accountability'],

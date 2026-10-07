@@ -83,7 +83,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
                 }`}>
                   <span className={`text-[10px] font-bold uppercase ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
-                    {isTa ? 'ஏகன் அநேகன்' : 'AEGAN ANEGAN'}
+                    {isTa ? 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ்' : 'AEGAN ANEGAN INDUSTRIES'}
                   </span>
                   <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></div>
                 </div>
@@ -91,7 +91,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
                 }`}>
                   <span className={`text-[10px] font-bold uppercase ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
-                    {isTa ? 'வாலறிவன்' : 'VALARIVAN'}
+                    {isTa ? 'வாலறிவன் இண்டஸ்ட்ரி' : 'VALARIVAN INDUSTRY'}
                   </span>
                   <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></div>
                 </div>
@@ -99,7 +99,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   isDark ? 'bg-[#100D06] border-[#4A3B18]' : 'bg-[#FAF7F2] border-[#E2D5B8]'
                 }`}>
                   <span className={`text-[10px] font-bold uppercase ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
-                    {isTa ? 'அருளாட்சி' : 'ARULATCHI'}
+                    {isTa ? 'அருளாட்சி ஒபிசி' : 'ARULATCHI OPC'}
                   </span>
                   <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></div>
                 </div>

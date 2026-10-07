@@ -217,7 +217,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                       : 'bg-[#FAF7F2] border-[#E2D5B8] text-[#1C1810] focus:border-[#B8860B]'
                   }`}
                 >
-                  <option value="manufacturing">{isTa ? 'இயந்திர உற்பத்தி விசாரணை (ஏகன் அநேகன்)' : 'Machinery Manufacturing Inquiry (Aegan Anegan)'}</option>
+                  <option value="manufacturing">{isTa ? 'இயந்திர உற்பத்தி விசாரணை (ஏகன் அநேகன் இண்டஸ்ட்ரீஸ்)' : 'Machinery Manufacturing Inquiry (Aegan Anegan Industries)'}</option>
                   <option value="dealership">{isTa ? 'டீலர்ஷிப் / விநியோகஸ்தர் கூட்டாண்மை' : 'Dealership / Distributor Partnership'}</option>
                   <option value="collaboration">{isTa ? 'செயல்பாட்டு ஒத்துழைப்பு' : 'Operational Collaboration'}</option>
                   <option value="partnership">{isTa ? 'மூலோபாய கூட்டாண்மை / நிர்வாகம்' : 'Strategic Partnership / Governance'}</option>

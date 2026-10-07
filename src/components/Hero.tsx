@@ -114,19 +114,19 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
               </div>
               <div>
                 <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
-                  {isTa ? 'ஏகன் அநேகன்' : 'AEGAN ANEGAN'}
+                  {isTa ? 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ்' : 'AEGAN ANEGAN INDUSTRIES'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'இயந்திரங்கள் & உற்பத்தி' : 'Machinery & Fabrication'}</span>
               </div>
               <div>
                 <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
-                  {isTa ? 'வாலறிவன்' : 'VALARIVAN'}
+                  {isTa ? 'வாலறிவன் இண்டஸ்ட்ரி' : 'VALARIVAN INDUSTRY'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'விற்பனை & வணிகம்' : 'Sales & Distribution'}</span>
               </div>
               <div>
                 <span className={`font-bold block text-sm ${isDark ? 'text-white' : 'text-[#1C1810]'}`}>
-                  {isTa ? 'அருளாட்சி' : 'ARULATCHI OPC'}
+                  {isTa ? 'அருளாட்சி ஒபிசி' : 'ARULATCHI OPC'}
                 </span>
                 <span className="text-[11px] opacity-75">{isTa ? 'கொள்முதல் & விநியோகம்' : 'Procurement Supply'}</span>
               </div>
@@ -166,7 +166,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
               }`}>
                 <img
                   src={imgRotaryMachine}
-                  alt="Aegan Anegan Rotary Oil Machine"
+                  alt="Aegan Anegan Industries Rotary Oil Machine"
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />

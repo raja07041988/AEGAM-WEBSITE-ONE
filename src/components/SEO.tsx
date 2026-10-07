@@ -22,7 +22,7 @@ export const SEO: React.FC<SEOProps> = ({ page, productName }) => {
         return {
           title: isTa 
             ? 'ஏகம் (AEGAM) — ஒருங்கிணைந்த தொழிற்துறை & நிர்வாக சுற்றுச்சூழல் அமைப்பு' 
-            : 'AEGAM — Industrial Machinery Manufacturing & Operational Governance Ecosystem',
+            : 'AEGAM | Structured Industrial Ecosystem',
           description: isTa
             ? 'ஏகம் (AEGAM) என்பது கனரக ரோட்டரி எண்ணெய் இயந்திரங்கள் உற்பத்தி, பட்டறைத் தயாரிப்பு, அறக்கட்டளை நிர்வாகம் மற்றும் ஒருங்கிணைந்த வணிக செயல்பாடுகளை நிர்வகிக்கும் தொழிற்துறை அமைப்பாகும்.'
             : 'AEGAM is a unified industrial ecosystem engineering heavy rotary oil extraction machinery, industrial fabrication, stewardship governance, and structured commerce operations.',
@@ -44,17 +44,17 @@ export const SEO: React.FC<SEOProps> = ({ page, productName }) => {
             ? 'சுற்றுச்சூழல் கட்டமைப்பு & நிறுவன பாத்திரங்கள் | AEGAM Ecosystem' 
             : 'Ecosystem Architecture & Entity Framework | AEGAM Entities',
           description: isTa
-            ? 'ஏகம் டிரஸ்ட், ஏகன் அநேகன் இண்டஸ்ட்ரீஸ், வாலறிவன் மற்றும் அருளாட்சி ஆகிய சிறப்பு நிறுவனங்களின் ஒருங்கிணைந்த கட்டமைப்பு.'
-            : 'Explore AEGAM’s specialized entity structure: AEGAM Trust (Governance), Aegan Anegan Industries (Machinery Mfg), Valarivan (Commerce), and Arulatchi (Procurement).',
+            ? 'ஏகம் டிரஸ்ட், ஏகன் அநேகன் இண்டஸ்ட்ரீஸ், வாலறிவன் இண்டஸ்ட்ரி மற்றும் அருளாட்சி ஒபிசி ஆகிய சிறப்பு நிறுவனங்களின் ஒருங்கிணைந்த கட்டமைப்பு.'
+            : 'Explore AEGAM’s specialized entity structure: AEGAM Trust (Governance), Aegan Anegan Industries (Machinery Mfg), Valarivan Industry (Commerce), and Arulatchi OPC (Procurement).',
           canonical: `${DOMAIN}/ecosystem`,
         };
       case 'products':
         return {
           title: isTa 
-            ? 'வணிக ரோட்டரி எண்ணெய் பிழிந்தெடுக்கும் இயந்திரங்கள் | AEGAN ANEGAN' 
+            ? 'வணிக ரோட்டரி எண்ணெய் பிழிந்தெடுக்கும் இயந்திரங்கள் | ஏகன் அநேகன் இண்டஸ்ட்ரீஸ்' 
             : 'Heavy Rotary Oil Extraction Machines & Expellers | Aegan Anegan Industries',
           description: isTa
-            ? 'அதிக எண்ணெய் விளைச்சல், மரச்செக்கு பாரம்பரியம், கனரக இரும்புச்சட்டம் மற்றும் நீடித்த உழைப்பிற்கு புகழ்பெற்ற ஏகன் அநேகன் ரோட்டரி எண்ணெய் இயந்திரங்கள்.'
+            ? 'அதிக எண்ணெய் விளைச்சல், மரச்செக்கு பாரம்பரியம், கனரக இரும்புச்சட்டம் மற்றும் நீடித்த உழைப்பிற்கு புகழ்பெற்ற ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் ரோட்டரி எண்ணெய் இயந்திரங்கள்.'
             : 'Commercial cold-press rotary oil extraction machines designed by Aegan Anegan Industries. High oil yield, hardened steel gears, heavy cast iron frames, and 24/7 industrial durability.',
           canonical: `${DOMAIN}/products`,
         };
@@ -64,7 +64,7 @@ export const SEO: React.FC<SEOProps> = ({ page, productName }) => {
             ? 'தொழிற்துறை வளாகம் & பட்டறை உள்கட்டமைப்பு | AEGAM Infrastructure' 
             : 'Industrial Campus & Heavy Workshop Infrastructure | AEGAM Facilities',
           description: isTa
-            ? 'ஏகம் வளாகத்தில் அமைந்துள்ள கனரக உற்பத்திப் பட்டறை, லேத் பிரிவு, சோதனைக் களம் மற்றும் அருளாட்சி மூலப்பொருள் கிடங்கு வசதிகள்.'
+            ? 'ஏகம் வளாகத்தில் அமைந்துள்ள கனரக உற்பத்திப் பட்டறை, லேத் பிரிவு, சோதனைக் களம் மற்றும் அருளாட்சி ஒபிசி மூலப்பொருள் கிடங்கு வசதிகள்.'
             : 'Explore AEGAM’s heavy fabrication bay, precision lathe machining section, 48-hour continuous test bay, and raw material storage yard.',
           canonical: `${DOMAIN}/infrastructure`,
         };
@@ -74,8 +74,8 @@ export const SEO: React.FC<SEOProps> = ({ page, productName }) => {
             ? 'பட்டறை தயாரிப்பு & வளாக புகைப்படங்களின் தொகுப்பு | AEGAM Gallery' 
             : 'Industrial Workshop & Campus Photo Gallery | AEGAM Visuals',
           description: isTa
-            ? 'ஏகன் அநேகன் பட்டறையில் நடக்கும் ரோட்டரி எண்ணெய் இயந்திர அசெம்பிளி, வெல்டிங் மற்றும் வளாகப் புகைப்படங்கள்.'
-            : 'Real photos from Aegan Anegan manufacturing bays, heavy machinery testing, structural welding, and AEGAM industrial campus.',
+            ? 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் பட்டறையில் நடக்கும் ரோட்டரி எண்ணெய் இயந்திர அசெம்பிளி, வெல்டிங் மற்றும் வளாகப் புகைப்படங்கள்.'
+            : 'Real photos from Aegan Anegan Industries manufacturing bays, heavy machinery testing, structural welding, and AEGAM industrial campus.',
           canonical: `${DOMAIN}/gallery`,
         };
       case 'faq':

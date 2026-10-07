@@ -9,8 +9,8 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'Machinery',
     taCategory: 'இயந்திரங்கள்',
     image: imgRotaryMachine,
-    caption: 'Heavy rotary oil machine undergoing continuous load trial at Aegan Anegan workshop bay.',
-    taCaption: 'ஏகன் அநேகன் பட்டறையில் தொடர்ச்சியான சுமை சோதனையில் இருக்கும் கனரக ரோட்டரி எண்ணெய் இயந்திரம்.'
+    caption: 'Heavy rotary oil machine undergoing continuous load trial at Aegan Anegan Industries workshop bay.',
+    taCaption: 'ஏகன் அநேகன் இண்டஸ்ட்ரீஸ் பட்டறையில் தொடர்ச்சியான சுமை சோதனையில் இருக்கும் கனரக ரோட்டரி எண்ணெய் இயந்திரம்.'
   },
   {
     id: 'heavy-lathe-machining',
